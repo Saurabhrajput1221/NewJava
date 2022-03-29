@@ -25,10 +25,21 @@ public class User_input {
     //   String str = sc.next();
     //   System.out.println(str);
 
-      // for (String) line ...
-      System.out.println("for Line or word...");
-      String str2 = sc.nextLine();
-      System.out.println(str2);
+      // // for (String) line ...
+      // System.out.println("for Line or word...");
+      // String str2 = sc.nextLine();
+      // System.out.println(str2);
+
+      // //Practice Question 1...
+
+      // String str1 = sc.nextLine();
+      // System.out.println("Hello :" + (str1));
+
+
+         // //Practice Question 2...
+         // Question: Check input is integer or Not...
+           System.out.println(sc.hasNextInt());        
+
         
     }
 }
