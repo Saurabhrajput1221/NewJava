@@ -1,33 +1,34 @@
-// public class Literals {
-//     public static void main(String[] args) {
-//         System.out.println("start...");
 
-//         byte age = 34;
-//         System.out.println(age);
+public class Literals {
+    public static void main(String[] args) {
+        System.out.println("start...");
 
-//         int age2 = 56;
-//         System.out.println(age2);
+        byte age = 34;
+        System.out.println(age);
 
-//         short age3 = 88;
-//         System.out.println(age3);
+        int age2 = 56;
+        System.out.println(age2);
 
-//         long abc = 9858734398759847L;
-//         System.out.println(abc);
+        short age3 = 88;
+        System.out.println(age3);
 
-//         char ch1 = 'A';
-//         System.out.println(ch1);
+        long abc = 9858734398759847L;
+        System.out.println(abc);
 
-//         String str1 = "String...";
-//         System.out.println(str1);
+        char ch1 = 'A';
+        System.out.println(ch1);
 
-//         float f1 = 7.3f;
-//         System.out.println(f1);
+        String str1 = "String...";
+        System.out.println(str1);
 
-//         double d1 = 5.5656;
-//         System.out.println(d1);
+        float f1 = 7.3f;
+        System.out.println(f1);
 
-//         boolean a = true;
-//         System.out.println(a);
+        double d1 = 5.5656;
+        System.out.println(d1);
 
-//     }
-// }
+        boolean a = true;
+        System.out.println(a);
+
+    }
+}
