@@ -23,7 +23,7 @@ public class CBSC_percetages {
 
         float OutofMarks = 500;
 
-        System.out.println("This is Your percentages... Outof 5 sub...");
+        System.out.println("This is Your percentages... Outof 5 subject...");
         float percentage = ((Obtained/OutofMarks)*100);
         System.out.println(percentage);
 
