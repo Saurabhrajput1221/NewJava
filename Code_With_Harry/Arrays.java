@@ -33,11 +33,31 @@ public class Arrays {
     //        System.out.print(rollno[i]);
     //    }
 
-    //    2nd way of displyaing Array
-    int[] rollno = {3,45,6,6,78,88};
-    for(int element : rollno){
-        System.out.println(element);
-    }
+    // //    2nd way of displyaing Array
+    // int[] rollno = {3,45,6,6,78,88};
+    // for(int element : rollno){
+    //     System.out.println(element);
+    // }
 
+    // multidimensional Array...
+    System.out.println("multidimensional Array...");
+
+    int[][] flat = new int [3][2];
+
+    flat[0][0] = 100;
+    flat[0][1] = 101;
+    flat[0][2] = 102;
+    flat[2][0] = 200;
+    flat[2][1] = 201;
+    flat[2][2] = 202;
+
+
+    // System.out.println(flat[0][1]);
+    for(int i =0; i<flat.length; i++){
+        for(int j=0; j<flat[i].length; j++){
+            System.out.println(flat[i][j]);
+        }
+        System.out.println("");
+    }
     }
 }
