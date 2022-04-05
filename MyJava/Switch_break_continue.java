@@ -5,7 +5,7 @@ public class Switch_break_continue {
 
 
 
-    System.out.println ("Hello World");
+    // System.out.println ("Hello World");
 //              if else if and else conditions
     Scanner sc = new Scanner (System.in);
     // int choice = sc.nextInt ();
@@ -50,31 +50,23 @@ public class Switch_break_continue {
 
 // break in for loop...
 
-// int n = sc.nextInt();
-// Strting[] fruits = new Strting[n];
-// for( int i =0; i<fruits.length; i++){
-//     fruits[i] = sc.next();
-    
-// }
-//       String query = sc.next();
-//       for (int i =0 ; i<fruits.length; i++){
-//           if (fruits[i].equals(query));
-//           System.out.println(i);
-//       }
-
+System.out.println("pls enter Number of array...");
 int n = sc.nextInt();
+System.out.println( " Enter " + n + " fruits name...");
 String[] fruits = new String[n];
-for(int i=0;i<n;i++){
-    fruits[i]=sc.next();
+for( int i =0; i<fruits.length; i++){
+    fruits[i] = sc.next();
+    
 }
-String query=sc.next();
-for(int i=0;i<n;i++){
+System.out.println("pls enter your query...");
+      String query = sc.next();
+      for (int i =0 ; i<fruits.length; i++){
+          if (fruits[i].equals(query)){
+              System.out.println(i);
+              System.out.println(" your query is avilable at " + i + " index Number...");
+          }
+      }
 
-System.out.println("Searching at index" + i);
-    if(fruits[i].equals(query)){
-  
-   }
-}
 
   }
 }
