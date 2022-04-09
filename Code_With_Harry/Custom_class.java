@@ -1,35 +1,48 @@
 // I did more practice on Custom class
 class saurabh {
+    // property of saurabh class
     int id;
     String Lname;
     int salary;
+    String Fname;
 
     public void Details() {
         System.out.println(" My surname  is " + Lname);
         System.out.println(" and my id is " + id);
     }
-    public int MoreDetails(){
+    public int getsalary(){
         return salary ;
 
+    }
+    public void getDetails(){
+        System.out.println( " my first name is " + Fname + " and lastname is " + Lname ) ;
     }
 
 }
 public class Custom_class {
     public static void main(String[] args) {
+
+        // saurabh is our class and Details, getsalary and getDetails are methods inside a Class
+        
         System.out.println("My practice Custom class ");
         saurabh abc = new saurabh();
 
         abc.id = 45;
         abc.Lname = "Rajput";
 
+        // Details method called
         System.out.println(abc.id);
         System.out.println(abc.Lname);
-
         abc.Details();
 
+        // getsalary method called
         abc.salary = 56000;
-        int salary = abc.MoreDetails() ;
+        int salary = abc.getsalary() ;
         System.out.println(salary);
+
+        // getDetails method called
+        abc.Fname = "Saurabh";
+        abc.getDetails();
 
     }
 }
