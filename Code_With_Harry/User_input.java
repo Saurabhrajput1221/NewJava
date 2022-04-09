@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 
 
@@ -10,9 +10,7 @@ public class User_input {
 
     public static void main(String[] args) {
         System.out.println("Taking input from user...");
-        // Scanner means i want to create new object...
-         Scanner sc = new Scanner(System.in);
-         System.out.println("Enter no 1...");
+        System.out.println("Enter no 1...");
         //  int a = sc.nextInt();
 
         //  System.out.println("Enter no 2...");
