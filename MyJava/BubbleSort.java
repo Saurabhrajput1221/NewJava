@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class BubbleSort {
       class bubbleSort
   {
@@ -15,6 +16,9 @@ public class BubbleSort {
 	    }
 	}
 
+    }
+
+    private void swap(int[] arr, int j, int i) {
     }
   }
     public static void main(String[] args) {
