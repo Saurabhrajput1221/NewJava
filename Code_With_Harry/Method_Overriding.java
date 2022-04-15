@@ -1,4 +1,4 @@
-package chpter10;
+// package chpter10;
 
 class A {
     int a;

@@ -1,4 +1,4 @@
-package chpter10;
+// package chpter10;
 
 // I did not get chapter 10 Questions set.
 class circle {

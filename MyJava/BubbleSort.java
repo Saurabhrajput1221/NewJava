@@ -24,9 +24,10 @@ public class BubbleSort {
   
   public static void main(String[] args) {
     System.out.println("Bubble Sort.");
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    int[] arr = new int[n];
+    try (Scanner sc = new Scanner(System.in)) {
+      // int n = sc.nextInt();
+      // int[] array = new int[n];
+    }
   }
 }
 

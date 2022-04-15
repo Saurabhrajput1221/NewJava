@@ -1,4 +1,4 @@
-package chpter10;
+// package chpter10;
 class Base1{
     Base1(){
         System.out.println("I am a constructor.");
@@ -40,8 +40,8 @@ public class Constructors_In_Inheritance {
         // Base1 newBase = new Base1();
         // Derived newchild = new Derived();
 
-        childOfDerived grandchilds = new childOfDerived();
-        childOfDerived grandchild = new childOfDerived(12, 13,15);
+        // childOfDerived grandchilds = new childOfDerived();
+        // childOfDerived grandchild = new childOfDerived(12, 13,15);
 
          
     }

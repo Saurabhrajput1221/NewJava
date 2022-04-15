@@ -1,0 +1,293 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "request": "attach",
+            "name": "Attach by Process ID",
+            "processId": "${command:PickJavaProcess}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Abstract_Interfaces",
+            "request": "launch",
+            "mainClass": "Abstract_Interfaces",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array",
+            "request": "launch",
+            "mainClass": "Array",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrays",
+            "request": "launch",
+            "mainClass": "Arrays",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "BubbleSort",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch CBSC_percetages",
+            "request": "launch",
+            "mainClass": "CBSC_percetages",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Constructors_In_Inheritance",
+            "request": "launch",
+            "mainClass": "Constructors_In_Inheritance",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Constuctors",
+            "request": "launch",
+            "mainClass": "Constuctors",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Custom_class",
+            "request": "launch",
+            "mainClass": "Custom_class",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Functions",
+            "request": "launch",
+            "mainClass": "Functions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Good",
+            "request": "launch",
+            "mainClass": "Good",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertionSort",
+            "request": "launch",
+            "mainClass": "InsertionSort",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Literals",
+            "request": "launch",
+            "mainClass": "Literals",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LogicalOperators",
+            "request": "launch",
+            "mainClass": "LogicalOperators",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loop",
+            "request": "launch",
+            "mainClass": "Loop",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Loops",
+            "request": "launch",
+            "mainClass": "Loops",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Method",
+            "request": "launch",
+            "mainClass": "Method",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Method_Dispatch",
+            "request": "launch",
+            "mainClass": "Method_Dispatch",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Method_Overriding",
+            "request": "launch",
+            "mainClass": "Method_Overriding",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Modifier_private",
+            "request": "launch",
+            "mainClass": "Modifier_private",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mystr",
+            "request": "launch",
+            "mainClass": "Mystr",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mystring",
+            "request": "launch",
+            "mainClass": "Mystring",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch OopsQuestions",
+            "request": "launch",
+            "mainClass": "OopsQuestions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Operators",
+            "request": "launch",
+            "mainClass": "Operators",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Overloading",
+            "request": "launch",
+            "mainClass": "Overloading",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuestionChapter10",
+            "request": "launch",
+            "mainClass": "QuestionChapter10",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bubblesort",
+            "request": "launch",
+            "mainClass": "Questions.Bubblesort",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuestionsConstructor",
+            "request": "launch",
+            "mainClass": "QuestionsConstructor",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuestionsLoops",
+            "request": "launch",
+            "mainClass": "QuestionsLoops",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuestionsOnMethods",
+            "request": "launch",
+            "mainClass": "QuestionsOnMethods",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Questionstring",
+            "request": "launch",
+            "mainClass": "Questionstring",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Recursion",
+            "request": "launch",
+            "mainClass": "Recursion",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Switch",
+            "request": "launch",
+            "mainClass": "Switch",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserInput",
+            "request": "launch",
+            "mainClass": "UserInput",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch User_input",
+            "request": "launch",
+            "mainClass": "User_input",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch VarArgs",
+            "request": "launch",
+            "mainClass": "VarArgs",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch else_if_statements",
+            "request": "launch",
+            "mainClass": "else_if_statements",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch if_else",
+            "request": "launch",
+            "mainClass": "if_else",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch this_super",
+            "request": "launch",
+            "mainClass": "this_super",
+            "projectName": "Java_cb0dbbcd"
+        }
+    ]
+}

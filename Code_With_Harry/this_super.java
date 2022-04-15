@@ -1,4 +1,4 @@
-package chpter10;
+// package chpter10;
 class Myclass{
     int a;
     Myclass(int a){
@@ -27,7 +27,7 @@ public class this_super {
          Myclass Newclass = new Myclass(7);
          System.out.println(Newclass.get());
 
-         Myclass2 newclass2 = new Myclass2(8);
+        //  Myclass2 newclass2 = new Myclass2(8);
   
 
      }

@@ -1,4 +1,4 @@
-package chpter10;
+// package chpter10;
 class One{
     public void name(){
         System.out.println("this is method in One(class).");
