@@ -27,7 +27,7 @@ public class Recursion {
           public static void main(String[] args) {
               System.out.println(" Recursion starts...");
               System.out.println("This is problem is solving by recursoin function...");
-              int x = 5;
+              int x = 4;
               System.out.println(factorial_recursion(x));
               
             // System.out.println("This is problem is solving by iterative approach function...");

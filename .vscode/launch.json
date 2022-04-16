@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QuestionsOnRecursion",
+            "request": "launch",
+            "mainClass": "QuestionsOnRecursion",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Hello",
             "request": "launch",
             "mainClass": "Hello",
