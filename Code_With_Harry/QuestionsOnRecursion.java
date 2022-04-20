@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class QuestionsOnRecursion {
+public class QuestionsOnRecursion {    // 0 , 1, 1, 2,3
     static int fibonacii(int n) {
         if (n == 0) {
             return 0;
