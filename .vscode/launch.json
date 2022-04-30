@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Access_Modifier",
+            "request": "launch",
+            "mainClass": "Access_Modifier",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "packages.child.hello",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch packages",
+            "request": "launch",
+            "mainClass": "packages",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch QuestionOnAbstract_Intefaces",
             "request": "launch",
             "mainClass": "QuestionOnAbstract_Intefaces",
