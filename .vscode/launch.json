@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Thread_Constructor",
+            "request": "launch",
+            "mainClass": "Thread_Constructor",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runnable_Threads",
+            "request": "launch",
+            "mainClass": "Runnable_Threads",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Extending_Threads",
+            "request": "launch",
+            "mainClass": "Extending_Threads",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Threads",
+            "request": "launch",
+            "mainClass": "Threads",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread",
+            "request": "launch",
+            "mainClass": "Thread",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Access_Modifier",
             "request": "launch",
             "mainClass": "Access_Modifier",
