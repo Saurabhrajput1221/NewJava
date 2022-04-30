@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Inheritance_in_Interfaces",
+            "request": "launch",
+            "mainClass": "Inheritance_in_Interfaces",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Interface2",
             "request": "launch",
             "mainClass": "Interface2",
