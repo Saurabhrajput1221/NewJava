@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Interface2",
+            "request": "launch",
+            "mainClass": "Interface2",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Interface",
             "request": "launch",
             "mainClass": "Interface",

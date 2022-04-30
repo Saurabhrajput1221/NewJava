@@ -33,7 +33,7 @@ class AvonCycle implements Bicycle, MotorCycle {
     }
 
     public void petrol(int pet) {
-      
+
         System.out.println("This is petrol vechicle");
     }
 }
