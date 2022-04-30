@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QuestionOnAbstract_Intefaces",
+            "request": "launch",
+            "mainClass": "QuestionOnAbstract_Intefaces",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuestionOnPolymorphism",
+            "request": "launch",
+            "mainClass": "QuestionOnPolymorphism",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Polymorphism",
+            "request": "launch",
+            "mainClass": "Polymorphism",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Inheritance_in_Interfaces",
             "request": "launch",
             "mainClass": "Inheritance_in_Interfaces",
