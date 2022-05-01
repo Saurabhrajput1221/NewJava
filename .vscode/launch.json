@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Nested_try_Catch",
+            "request": "launch",
+            "mainClass": "Nested_try_Catch",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Exceptions_Handling",
+            "request": "launch",
+            "mainClass": "Exceptions_Handling",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try_Catch",
+            "request": "launch",
+            "mainClass": "Try_Catch",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Threads_Questions",
+            "request": "launch",
+            "mainClass": "Threads_Questions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Methods",
+            "request": "launch",
+            "mainClass": "Thread_Methods",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Thread_Priorities",
+            "request": "launch",
+            "mainClass": "Thread_Priorities",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Thread_Constructor",
             "request": "launch",
             "mainClass": "Thread_Constructor",
