@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Exception_Class",
+            "request": "launch",
+            "mainClass": "Exception_Class",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Nested_try_Catch",
             "request": "launch",
             "mainClass": "Nested_try_Catch",
