@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DateClass",
+            "request": "launch",
+            "mainClass": "AdvanceJava.DateClass",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashingInjava",
+            "request": "launch",
+            "mainClass": "AdvanceJava.HashingInjava",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayDequeMethods",
             "request": "launch",
             "mainClass": "AdvanceJava.ArrayDequeMethods",
