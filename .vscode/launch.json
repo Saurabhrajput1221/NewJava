@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ArrayDequeMethods",
+            "request": "launch",
+            "mainClass": "AdvanceJava.ArrayDequeMethods",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkList",
+            "request": "launch",
+            "mainClass": "AdvanceJava.LinkList",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arraylist",
+            "request": "launch",
+            "mainClass": "AdvanceJava.Arraylist",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch First",
+            "request": "launch",
+            "mainClass": "AdvanceJava.First",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Questions_Error_Exception",
+            "request": "launch",
+            "mainClass": "Questions_Error_Exception",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Try_Catch_Finally",
+            "request": "launch",
+            "mainClass": "Try_Catch_Finally",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Throw_Throws",
+            "request": "launch",
+            "mainClass": "Throw_Throws",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Exception_Class",
             "request": "launch",
             "mainClass": "Exception_Class",
