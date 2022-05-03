@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch JavaDocGenerator",
+            "request": "launch",
+            "mainClass": "AdvanceJava2.JavaDocGenerator",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Question_Advance",
             "request": "launch",
             "mainClass": "AdvanceJava.Question_Advance",
