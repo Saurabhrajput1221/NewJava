@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CalenderClass",
+            "request": "launch",
+            "mainClass": "AdvanceJava.CalenderClass",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch DateClass",
             "request": "launch",
             "mainClass": "AdvanceJava.DateClass",
