@@ -61,12 +61,13 @@ class Fourwheeler extends Vehicle{
 }
 
 class Ducati extends Twowheeler{
+    // if i pass parameters then it will be Overloading ...and same method pass into child class then it will be Overide...
     Ducati(){
         this.noOfSeats = 1;
     }
 
     // if we didnot writre below method it will print Appling brake....otherwise it will print Appling Brake Ducati...
-    @Override
+    
     void Applybrake(){
         System.out.println("Appling Brake Ducati...");
     }
