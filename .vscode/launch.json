@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Inheritance",
+            "request": "launch",
+            "mainClass": "Oops.Inheritance",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Inheritance",
+            "request": "launch",
+            "mainClass": "Inheritance",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Files_In_java",
             "request": "launch",
             "mainClass": "AdvanceJava2.Files_In_java",
