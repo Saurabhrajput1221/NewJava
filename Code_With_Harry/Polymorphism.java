@@ -45,7 +45,7 @@ public class Polymorphism {
 
     public static void main(String[] args) {
         System.out.println("This is polymorphism..");
-       // // we can acess only Mycamera inteface data
+        // // we can acess only Mycamera inteface data
         // Mycamera2 cam = new Mysmartphone2();
         // cam.takesnap();
         // cam.recordvideo();
@@ -58,7 +58,7 @@ public class Polymorphism {
         // wifi.connetToNetwork("jio...");
 
         // we can excess all intefaces data.
-        Mysmartphone2  alldata = new Mysmartphone2();
+        Mysmartphone2 alldata = new Mysmartphone2();
         alldata.callNumber(1234567890);
         alldata.getnetwork();
         alldata.takesnap();

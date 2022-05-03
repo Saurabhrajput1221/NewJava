@@ -12,10 +12,12 @@ public class Overloading {
         System.out.println("hello foo one ");
 
     }
+    //method 2
 
     static void foo(int a) {
         System.out.println("hello foo two ur value is" + a);
     }
+    // method 3
     static void foo(int a, int b) {
         System.out.println("hello foo three ur value is " + a +" and " + b);
     }
