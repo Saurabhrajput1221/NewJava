@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Files_In_java",
+            "request": "launch",
+            "mainClass": "AdvanceJava2.Files_In_java",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch File",
+            "request": "launch",
+            "mainClass": "AdvanceJava2.File",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnonymousClass_LambdaExpression",
+            "request": "launch",
+            "mainClass": "AdvanceJava2.AnonymousClass_LambdaExpression",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnonymousClass",
+            "request": "launch",
+            "mainClass": "AdvanceJava2.AnonymousClass",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch JavaDocGenerator",
             "request": "launch",
             "mainClass": "AdvanceJava2.JavaDocGenerator",
