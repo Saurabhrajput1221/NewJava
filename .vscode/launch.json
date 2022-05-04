@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Methods",
+            "request": "launch",
+            "mainClass": "DSA.Methods",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoDArray",
+            "request": "launch",
+            "mainClass": "DSA.TwoDArray",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Inheritance",
             "request": "launch",
             "mainClass": "Oops.Inheritance",
