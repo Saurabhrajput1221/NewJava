@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NewDSA",
+            "request": "launch",
+            "mainClass": "PracticeDSA.NewDSA",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Methods",
             "request": "launch",
             "mainClass": "DSA.Methods",
