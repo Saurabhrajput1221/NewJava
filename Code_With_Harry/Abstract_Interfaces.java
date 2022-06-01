@@ -14,7 +14,7 @@ abstract class Base {
 
 class child extends Base {
     public void greet() {
-        System.out.println("goodmorning");
+        System.out.println("good morning");
     }
 }
 
