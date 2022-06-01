@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimeComplexity",
+            "request": "launch",
+            "mainClass": "DSA.TimeComplexity",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Arrays2",
             "request": "launch",
             "mainClass": "Arrays2",
