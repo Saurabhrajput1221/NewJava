@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "DSA.BubbleSort",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch TimeComplexity",
             "request": "launch",
             "mainClass": "DSA.TimeComplexity",
