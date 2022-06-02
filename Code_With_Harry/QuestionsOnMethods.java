@@ -1,4 +1,13 @@
 public class QuestionsOnMethods {
+
+    // // problem
+    // print array using methods and loop...
+    static void Arrayprinting(int hello[]) {
+        for (int i = 0; i < hello.length; i++) {
+            System.out.print(hello[i] + " ");
+        }
+    }
+
     // // problem No 1
     // static void multiplicationNumber(int n) {
     // for (int i = 0; i <= 10; i++) {
@@ -38,16 +47,20 @@ public class QuestionsOnMethods {
     // * *
     // *
     // static void ReverseStarts(int n) {
-    //     for (int i = n; i > 0; i--) {
-    //         for (int j = i; j > 0; j--) {
-    //             System.out.print("* ");
-    //         }
-    //         System.out.println();
-    //     }
+    // for (int i = n; i > 0; i--) {
+    // for (int j = i; j > 0; j--) {
+    // System.out.print("* ");
+    // }
+    // System.out.println();
+    // }
     // }
 
     public static void main(String[] args) {
         System.out.println("multiplication of n Number");
+        // Problem.....
+        int ho[] = { 4, 2, 5, 32, 5 };
+        Arrayprinting(ho);
+
         // problem No 1
         // multiplicationNumber(2);
 
