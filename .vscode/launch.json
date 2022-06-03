@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Placement",
+            "request": "launch",
+            "mainClass": "Placement",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
             "name": "Launch InsertionSort",
             "request": "launch",
             "mainClass": "DSA.InsertionSort",
