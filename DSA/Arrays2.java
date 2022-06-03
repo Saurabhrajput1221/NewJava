@@ -1,5 +1,5 @@
 package DSA;
-import javax.swing.tree.RowMapper;
+// import javax.swing.tree.RowMapper;
 
 public class Arrays2 {
     public static void main(String[] args) {

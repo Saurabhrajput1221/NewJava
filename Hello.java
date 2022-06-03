@@ -1,37 +1,37 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 /**
  * Hello
  */
 public class Hello {
     static void SsortArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            // System.out.print(arr[i] + " ");
-        }
-    }
+    //     for (int i = 0; i < arr.length; i++) {
+    //         // System.out.print(arr[i] + " ");
+    //     }
+    // }
 
     public static void main(String[] args) {
-        // selection sort at my own
-        int arr[] = { 1, 3, 5, 43, 2 };
-        for (int i = 0; i < arr.length; i++) {
-            int small = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[small] > arr[j]) {
-                    small = j;
+    //     // selection sort at my own
+    //     int arr[] = { 1, 3, 5, 43, 2 };
+    //     for (int i = 0; i < arr.length; i++) {
+    //         int small = i;
+    //         for (int j = i + 1; j < arr.length; j++) {
+    //             if (arr[small] > arr[j]) {
+    //                 small = j;
 
-                }
-            }
-            int temp = arr[small];
-            arr[small] = arr[i];
-            arr[i] = temp;
-            System.out.print(arr[i] + "  ");
+    //             }
+    //         }
+    //         int temp = arr[small];
+    //         arr[small] = arr[i];
+    //         arr[i] = temp;
+    //         System.out.print(arr[i] + "  ");
 
-        }
+    //     }
 
-        SsortArray(arr);
+    //     SsortArray(arr);
 
-        // System.out.println("Hello java...");
-        // System.out.println("hello world...");
+        System.out.println("Hello java...");
+        System.out.println("hello world...");
         // Scanner sc = new Scanner( System.in);
         // // int n = sc.nextInt();
         // // int b = sc.nextInt();
