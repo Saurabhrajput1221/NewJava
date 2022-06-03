@@ -15,10 +15,10 @@ public class SelectionSort {
             int small = i;
 
             for (int j = i + 1; j < arr.length; j++) {
+                // System.out.println(arr[i] + " ");
                 if (arr[small] > arr[j]) {
                     small = j;
                     
-                    // System.out.println(arr[i] + " ");
                 }
             }
             // Swaping .....
