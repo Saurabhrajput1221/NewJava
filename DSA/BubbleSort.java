@@ -2,16 +2,16 @@ package DSA;
 
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
+// import javax.print.DocFlavor.STRING;
 
 public class BubbleSort {
     // Below lines printing only array
     // Bubble sort of Numbers
-    static void PrintArr(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-    }
+    // static void PrintArr(int arr[]) {
+    // for (int i = 0; i < arr.length; i++) {
+    // System.out.print(arr[i] + " ");
+    // }
+    // }
 
     // Bubble sort of using String
     // static void PrintArr(String[] helo) {
@@ -24,37 +24,39 @@ public class BubbleSort {
         System.out.println(
                 "Bubble Sort using 1) Take input from user, 2) Bubble sort of Number, 3)Bubble sort of String");
 
-        // Scanner sc = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
         // /********************************************************* */
-        // // Take input from user....(code giving wrong output.....)
-        // System.out.print("Enter your array length and elements");
-        // int n = sc.nextInt();
-        // int arr[] = new int[n];
-        // for (int i = 0; i < n; i++) {
-        // arr[i] = sc.nextInt();
-        // }
-        // System.out.println("the array elements are");
-        // for (int i = 0; i < n; i++) {
-        // // System.out.print(arr[i] + " ");
-        // }
-        // for (int i = 0; i < arr.length -1; i++) {
-        // for (int j = 0; j < arr.length - 1 ; j++) {
-        // if (arr[j] > arr[j + 1]) {
+        // // Take input from user.....
+        System.out.print("Enter Numbers of integers to sort  ");
+        int sum = 0;
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.print("Enter " + n + " integers ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
 
-        // int temp = arr[j];
-        // arr[j] = arr[j + 1];
-        // arr[j + 1] = temp;
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i ; j++) {
+                if (arr[j] > arr[j + 1]) {
 
-        // }
-        // }
-        // System.out.print(arr[i] + " ");
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    
 
-        // int f = arr[0];
-        // int L = arr[arr.length];
-        // System.out.println("first element is " + f);
-        // System.out.println("last element is " + L);
-        // }
+                }
+            }
+
+            sum++;
+        }
+        System.out.println("Sorted Array list");
+        for (int i = 0; i < n; i++) {
+            System.out.println(arr[i] + " ");
+        }
+        System.out.println( "Number of times sorted in  " + sum + " swap");
+        System.out.println("First Element of sorted Array is " + arr[0]);
+        System.out.println("Last Element of sorted Array is " + arr[arr.length-1]);
         // int k = n - 1;
         // System.out.println("Array is sorted in " + k + " swap");
 
@@ -64,23 +66,23 @@ public class BubbleSort {
         // int arr[i] = sc.nextInt();
         // int m = sc.nextInt();
         // int arr [] = new int[n];
-        int arr[] = { 434, 546, 653, 3745, 646342, 45 };
+        // int arr[] = { 434, 546, 653, 3745, 646342, 45 };
 
-        System.out.println(arr.length);
+        // System.out.println(arr.length);
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
+        // for (int i = 0; i < arr.length; i++) {
+        // for (int j = 0; j < arr.length - 1 - i; j++) {
+        // if (arr[j] > arr[j + 1]) {
 
-                    // swaping elements
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+        // // swaping elements
+        // int temp = arr[j];
+        // arr[j] = arr[j + 1];
+        // arr[j + 1] = temp;
 
-                }
-            }
-        }
-        PrintArr(arr);
+        // }
+        // }
+        // }
+        // PrintArr(arr);
         // time complexity is n^2
 
         /********************************************************* */
