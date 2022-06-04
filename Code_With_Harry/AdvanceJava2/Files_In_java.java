@@ -13,7 +13,7 @@ public class Files_In_java {
             System.out.println(Line);
             
         } catch (Exception e) {
-            //TODO: handle exception
+       
             System.out.println(e);
         }
 
@@ -22,7 +22,7 @@ public class Files_In_java {
     //  try {
     //     myfile.createNewFile();
     //  } catch (Exception e) {
-    //      //TODO: handle exception
+         
     //      System.out.println(e);
          
     //  }
