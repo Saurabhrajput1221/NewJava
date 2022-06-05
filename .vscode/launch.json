@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PrMergeSort",
+            "request": "launch",
+            "mainClass": "DSA.PrMergeSort",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoOddSum",
+            "request": "launch",
+            "mainClass": "Questions.TwoOddSum",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch MergeSort2",
             "request": "launch",
             "mainClass": "DSA.MergeSort2",
