@@ -1,76 +1,69 @@
 package DSA;
 
-import java.lang.reflect.Array;
-// import java.rmi.server.LogStream;
-
 public class MergeSort {
-    // static void divide(int arr[] , int si , int ei) {
-    //     // (si + ei) /2   this also valid but its gives error in time complexity.
-    //     int mid = si + (ei - si) / 2; 
 
-    //     divide(arr, si, mid);
+    static void conquer(int arr[], int mid, int si, int ei) {
+        // we are creating new array to merger the divided array
+        int merged[] = new int[ei - si + 1];
 
-    // }
-    int array[];
-    int tempMergeArr[];
-    int length;
+        // idx1 tracking 1st array(divided array)
+        int idx1 = si;
+        // idx2 tracking 2nd array (divide array)
+        int idx2 = mid + 1;
+        // Now we are tracking Merge array
+        int x = 0;
 
-    public void sort(int[] inputArr){
-        this.array = inputArr;
-        this.length = inputArr.length;
-        this.tempMergeArr = new int[length];
-        divideArray(0, length-1);
-        
-    }
-    
-        public void MergeArray(int lowerIndex , int middle , int higherIndex){
-            for(int i = lowerIndex; i<=higherIndex; i++){
-                tempMergeArr[i] = array[i];
-            }
-            int i = lowerIndex ;
-            int j = middle +1;
-            int k = lowerIndex;
-            while(i<=middle && j<= higherIndex){
-                if(tempMergeArr[i] <= tempMergeArr[j]){
-                    array[k] = tempMergeArr[i];
-                    i++;
-                }
-                else{
-                    array[k] = tempMergeArr[j];
-                    j++;
-                }
-                j++;
-            }
-            while(i<= middle){
-                array[k] = tempMergeArr[i];
-                k++;
-                i++;
+        // we comparing divided array and merge into merged array
+        while (idx1 <= mid && idx2 <= ei) {
+            // If 1st element is big we simply add index1 (index1 of 1st divided array)
+            // element to merge array(at index 0 and increase elements++) we are checking
+            // the below condition
+            if (arr[idx1] <= arr[idx2]) {
+                // we add elements in merged array
+                merged[x++] = arr[idx1++];
+                // x ++; idx1++; //we can also write
+            } else {
+                // If 2nd element is big we simply add index2 (2nd arrays 1 element) into
+                // merge(we created empty) array
+                merged[x++] = arr[idx2++];
             }
         }
-    public void divideArray(int lowerIndex, int higherIndex){
-        if(lowerIndex<higherIndex){
-            int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
-            // It will sort the left side of Array.
-            divideArray(lowerIndex , middle);
-
-            // It will sort right side of Array.
-            divideArray(middle+1, higherIndex);
-
-            MergeArray(lowerIndex, middle , higherIndex);
-
+        while(idx1 <= mid){
+            merged[x++] = arr[idx1++];
+        }
+        while(idx2 <= ei){
+            merged[x++] = arr[idx2++];
+        }
+        for(int i =0, j=si; i<merged.length; j++, i++){
+            arr[j] = merged[i];
         }
     }
-    
+
+    static void divide(int arr[], int si, int ei) {
+        // (si + ei) /2 this also valid but its gives error in time complexity.
+        int mid = si + (ei - si) / 2;
+        // we are checking starting index is big or equal to then we simply return the
+        // array
+        if (si >= ei) {
+            return;
+        }
+
+        // for left side array
+        divide(arr, si, mid);
+        // for right side array
+        divide(arr, mid + 1, ei);
+        // we merge divided array in one single array its called as conquer
+        conquer(arr, mid, si, ei);
+
+    }
+
     public static void main(String[] args) {
-        // System.out.println("Merge Sort");
-        int arr[] = { 1, 4, 6, 8, 6, 4, 21 };
-        MergeSort ms = new MergeSort();
-        ms.sort(inputArr);
-        
-        //    for(int i =0;i<inputArr.length; i++){
-        //        System.out.print(inputArr[i] + " ");
-        //    }
-        // System.out.println("");
-        
+        System.out.println("Merge sort by Apana collage.....");
+
+        int [] arr = {4,2,3,1,6,565465};
+        divide(arr, 0, arr.length-1);
+        for(int i = 0 ; i<arr.length; i++){
+            System.out.print( arr[i] + " ");
+        }
     }
 }
