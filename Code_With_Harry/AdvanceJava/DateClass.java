@@ -10,6 +10,6 @@ public class DateClass {
        System.out.println(d); 
 
        System.out.println(d.getTime());
-       System.out.println(d.getYear() - 1900);
+    //    System.out.println(d.getYear() - 1900);
     }
 }
