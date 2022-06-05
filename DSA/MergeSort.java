@@ -1,7 +1,7 @@
 package DSA;
 
 import java.lang.reflect.Array;
-import java.rmi.server.LogStream;
+// import java.rmi.server.LogStream;
 
 public class MergeSort {
     // static void divide(int arr[] , int si , int ei) {
@@ -15,13 +15,38 @@ public class MergeSort {
     int tempMergeArr[];
     int length;
 
-    public void sort(int inputArr[]){
+    public void sort(int[] inputArr){
         this.array = inputArr;
         this.length = inputArr.length;
         this.tempMergeArr = new int[length];
         divideArray(0, length-1);
-
+        
     }
+    
+        public void MergeArray(int lowerIndex , int middle , int higherIndex){
+            for(int i = lowerIndex; i<=higherIndex; i++){
+                tempMergeArr[i] = array[i];
+            }
+            int i = lowerIndex ;
+            int j = middle +1;
+            int k = lowerIndex;
+            while(i<=middle && j<= higherIndex){
+                if(tempMergeArr[i] <= tempMergeArr[j]){
+                    array[k] = tempMergeArr[i];
+                    i++;
+                }
+                else{
+                    array[k] = tempMergeArr[j];
+                    j++;
+                }
+                j++;
+            }
+            while(i<= middle){
+                array[k] = tempMergeArr[i];
+                k++;
+                i++;
+            }
+        }
     public void divideArray(int lowerIndex, int higherIndex){
         if(lowerIndex<higherIndex){
             int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
@@ -35,38 +60,13 @@ public class MergeSort {
 
         }
     }
-
-    public void MergeArray(int lowerIndex , int middle , int higherIndex){
-        for(int i = lowerIndex; i<=higherIndex; i++){
-            tempMergeArr[i] = array[i];
-        }
-        int i = lowerIndex ;
-        int j = middle +1;
-        int k = lowerIndex;
-        while(i<=middle && j<= higherIndex){
-            if(tempMergeArr[i] <= tempMergeArr[j]){
-                array[k] = tempMergeArr[i];
-                i++;
-            }
-            else{
-                array[k] = tempMergeArr[j];
-                j++;
-            }
-            j++;
-        }
-        while(i<= middle){
-            array[k] = tempMergeArr[i];
-            k++;
-            i++;
-        }
-    }
-
+    
     public static void main(String[] args) {
         // System.out.println("Merge Sort");
         int arr[] = { 1, 4, 6, 8, 6, 4, 21 };
-           MergeSort ms = new MergeSort();
-           ms.sort(inputArr);
-
+        MergeSort ms = new MergeSort();
+        ms.sort(inputArr);
+        
         //    for(int i =0;i<inputArr.length; i++){
         //        System.out.print(inputArr[i] + " ");
         //    }
