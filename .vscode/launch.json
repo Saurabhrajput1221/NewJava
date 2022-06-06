@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LinkList",
+            "request": "launch",
+            "mainClass": "DSA.LinkList",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Linkedlist",
+            "request": "launch",
+            "mainClass": "DSA.Linkedlist",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort2",
+            "request": "launch",
+            "mainClass": "DSA.QuickSort2",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "DSA.QuickSort",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch PrMergeSort",
             "request": "launch",
             "mainClass": "DSA.PrMergeSort",
