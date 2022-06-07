@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LinkList2",
+            "request": "launch",
+            "mainClass": "DSA.LinkList2",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkList",
+            "request": "launch",
+            "mainClass": "LinkList",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bit_Masking",
+            "request": "launch",
+            "mainClass": "Bit_Masking",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch BitMasking",
+            "request": "launch",
+            "mainClass": "BitMasking",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch LinkList",
             "request": "launch",
             "mainClass": "DSA.LinkList",
