@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RectPattern",
+            "request": "launch",
+            "mainClass": "Questions.RectPattern",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch LinkList2",
             "request": "launch",
             "mainClass": "DSA.LinkList2",
