@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AdvancePatterns",
+            "request": "launch",
+            "mainClass": "Questions.AdvancePatterns",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExtraPr",
+            "request": "launch",
+            "mainClass": "Questions.ExtraPr",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch RectPattern",
             "request": "launch",
             "mainClass": "Questions.RectPattern",
