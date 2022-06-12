@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SortingPr",
+            "request": "launch",
+            "mainClass": "DSA.SortingPr",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch stringss",
             "request": "launch",
             "mainClass": "Questions.ApniKaksha.stringss",
