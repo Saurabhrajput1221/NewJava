@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Functions",
+            "request": "launch",
+            "mainClass": "Questions.Functions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch AdvancePatterns",
             "request": "launch",
             "mainClass": "Questions.AdvancePatterns",
