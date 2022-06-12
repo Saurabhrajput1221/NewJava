@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stringss",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.stringss",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Functions",
             "request": "launch",
             "mainClass": "Questions.Functions",
