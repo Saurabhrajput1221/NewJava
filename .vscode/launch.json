@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BackTracking",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.BackTracking",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch SortingPr",
             "request": "launch",
             "mainClass": "DSA.SortingPr",
