@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Recusion",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.Recusion",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch BackTracking",
             "request": "launch",
             "mainClass": "Questions.ApniKaksha.BackTracking",
