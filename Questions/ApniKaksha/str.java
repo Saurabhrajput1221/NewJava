@@ -2,7 +2,7 @@ package Questions.ApniKaksha;
 
 import java.util.*;
 
-public class stringss {
+public class str {
     public static void main(String[] args) {
         System.out.println("Stringssssssssss");
         // Scanner sc = new Scanner(System.in);

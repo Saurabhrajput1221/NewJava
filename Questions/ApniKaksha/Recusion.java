@@ -80,6 +80,7 @@ public class Recusion {
 //     }
 /********************************************* */
  public static void RevStr( String str , int index){
+    //  System.out.println(str + " heoldjlg " + index);
      if( index == 0){
         System.out.println(str.charAt(index));
          return ;
@@ -91,10 +92,11 @@ public class Recusion {
  }
     public static void main(String[] args) {
         System.out.println("Recusion...");
-        String str = "Rajput";
+        String str = "Rajput";        
         RevStr(str, str.length()-1);
 
-        stringss
+        // String str2 = "hello";
+        // System.out.println(str2.substring(1,4));
 
 
 
