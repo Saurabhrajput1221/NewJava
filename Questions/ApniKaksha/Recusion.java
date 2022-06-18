@@ -43,34 +43,78 @@ public class Recusion {
      * *******************************************
      */
     // Square of x to the power n
-    static int Square(int x, int n) {
-        // System.out.println(x + " " + n);
-        if (n == 0) {
-            // System.out.println("hello");
-            return 1;
-        }
-        if (x == 0) {
-            return 0;
-        } else{
-
-            int Xpownm1 = Square(x , n-1);
-            // System.out.println(Xpownm1);
-            int Xpown = x * Xpownm1;
-            return Xpown;
-        }
-        
-    }
-
+    // static int Square(int x, int n) {
+    // // System.out.println(x + " " + n);
+    // if (n == 0) {
+    // // System.out.println("hello");
+    // return 1;
+    // }
+    // if (x == 0) {
+    // return 0;
+    // // for Stack height = logn
+    // }if( n % 2 == 0){
+    // return Square(x , n/2) * Square(x , n/2);
+    // }else{
+    // return Square(x , n/2) * Square(x , n/2) * x;
+    // }
+    // // else{
+    // // int Xpownm1 = Square(x , n-1);
+    // // // System.out.println(Xpownm1);
+    // // int Xpown = x * Xpownm1;
+    // // return Xpown;
+    // // }
+    // }
+    /********************************************* */
+    // Tower of Honoi
+//     public static void Honoi(int n , String src , String helper , String  Dest){
+// //    System.out.println("heooo " + n);
+//         if (n == 1){
+//             System.out.println("Transfer disk " + n + " from " + src + " to " + Dest);
+//             return;
+//         }else{
+//              Honoi(n-1, src, Dest, helper);
+//             //  System.out.println(n);
+//              System.out.println("Transfer disk " + n + " from " + src + " to " + Dest);
+//              Honoi(n-1, helper, src, Dest);
+//         } 
+//     }
+/********************************************* */
+ public static void RevStr( String str , int index){
+     if( index == 0){
+        System.out.println(str.charAt(index));
+         return ;
+     }else{
+         System.out.print(str.charAt(index) + " ");
+         RevStr(str, index -1);
+         
+     }
+ }
     public static void main(String[] args) {
         System.out.println("Recusion...");
+        String str = "Rajput";
+        RevStr(str, str.length()-1);
+
+        stringss
+
+
+
+
+
+
+
+        /********************************************* */
+        // I am not able to sol at my own You need lot of practice
+        // Honoi(2, "src", "helper", "Dest");
+        /********************************************* */
         // Print(1);
         /********************************************* */
         // naturalNum(5);
         /********************************************* */
         // Factorial(5);
         /********************************************* */
-       int ans = Square(2, 5);
-        System.out.println(ans);
+        // int ans = Square(5, 2);
+        // System.out.println(ans);
+        /********************************************* */
 
     }
 }
