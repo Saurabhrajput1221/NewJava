@@ -17,4 +17,12 @@ public class str {
         // String Builder is same as String
 
     }
+
+    public static int length() {
+        return 0;
+    }
+
+    public static char charAt(int index) {
+        return 0;
+    }
 }

@@ -1,5 +1,8 @@
 package Questions.ApniKaksha;
 
+// import javax.print.DocFlavor.STRING;
+// import javax.sound.sampled.ReverbType;
+
 public class Recusion {
     // public static void Print(int n) {
     // if (n == 6) {
@@ -66,43 +69,69 @@ public class Recusion {
     // }
     /********************************************* */
     // Tower of Honoi
-//     public static void Honoi(int n , String src , String helper , String  Dest){
-// //    System.out.println("heooo " + n);
-//         if (n == 1){
-//             System.out.println("Transfer disk " + n + " from " + src + " to " + Dest);
-//             return;
-//         }else{
-//              Honoi(n-1, src, Dest, helper);
-//             //  System.out.println(n);
-//              System.out.println("Transfer disk " + n + " from " + src + " to " + Dest);
-//              Honoi(n-1, helper, src, Dest);
-//         } 
-//     }
-/********************************************* */
- public static void RevStr( String str , int index){
-    //  System.out.println(str + " heoldjlg " + index);
-     if( index == 0){
-        System.out.println(str.charAt(index));
-         return ;
-     }else{
-         System.out.print(str.charAt(index) + " ");
-         RevStr(str, index -1);
-         
-     }
- }
+    // public static void Honoi(int n , String src , String helper , String Dest){
+    // // System.out.println("heooo " + n);
+    // if (n == 1){
+    // System.out.println("Transfer disk " + n + " from " + src + " to " + Dest);
+    // return;
+    // }else{
+    // Honoi(n-1, src, Dest, helper);
+    // // System.out.println(n);
+    // System.out.println("Transfer disk " + n + " from " + src + " to " + Dest);
+    // Honoi(n-1, helper, src, Dest);
+    // }
+    // }
+    /********************************************* */
+
+    // I did at my own
+    // public static void ReString(int index, String str) {
+    // if (index == 0) {
+    // System.out.println(str.charAt(0));
+    // return;
+    // } else {
+    // System.out.print(str.charAt(index) + " ");
+    // ReString(index - 1, str);
+    // }
+    // }
+    /********************************************* */
+    public static int first = -1;
+    public static int last = -1;
+
+    public static void FindOccuranc(int index, String str, char element) {
+        // System.out.println(index);
+        if (index == str.length()) {
+            System.out.println(first);
+            System.out.println(last);
+            return;
+        }
+        char currchar = str.charAt(index);
+        // System.out.println("storage " + currchar );
+        // System.out.println(element);
+        if (currchar == element) {
+            if (first == -1) {
+                first = index;
+            } else {
+                last = index;
+                // System.out.println(last);
+            }
+        }
+        FindOccuranc(index + 1, str, element);
+    }
+
     public static void main(String[] args) {
         System.out.println("Recusion...");
-        String str = "Rajput";        
-        RevStr(str, str.length()-1);
+        FindOccuranc(0, "abaacdaefaah", 'a');
 
-        // String str2 = "hello";
-        // System.out.println(str2.substring(1,4));
-
-
-
-
-
-
+        /********************************************* */
+        // Print Revesers string using Recursion
+        // String str = "Nitin";
+        // ReString(str.length() - 1, str);
+        /********************************************* */
+        // Print Revesers string using ittration
+        // String str = "Hello";
+        // for(int i =str.length()-1; i>=0 ; i--){
+        // System.out.println(str.charAt(i));
+        // }
 
         /********************************************* */
         // I am not able to sol at my own You need lot of practice
