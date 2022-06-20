@@ -94,33 +94,72 @@ public class Recusion {
     // }
     // }
     /********************************************* */
-    public static int first = -1;
-    public static int last = -1;
+    // public static int first = -1;
+    // public static int last = -1;
 
-    public static void FindOccuranc(int index, String str, char element) {
-        // System.out.println(index);
-        if (index == str.length()) {
-            System.out.println(first);
-            System.out.println(last);
-            return;
-        }
-        char currchar = str.charAt(index);
-        // System.out.println("storage " + currchar );
-        // System.out.println(element);
-        if (currchar == element) {
-            if (first == -1) {
-                first = index;
-            } else {
-                last = index;
-                // System.out.println(last);
-            }
-        }
-        FindOccuranc(index + 1, str, element);
-    }
+    // public static void FindOccuranc(int index, String str, char element) {
+    // // System.out.println(index);
+    // if (index == str.length()) {
+    // System.out.println(first);
+    // System.out.println(last);
+    // return;
+    // }
+    // char currchar = str.charAt(index);
+    // // System.out.println("storage " + currchar );
+    // // System.out.println(element);
+    // if (currchar == element) {
+    // if (first == -1) {
+    // first = index;
+    // } else {
+    // last = index;
+    // // System.out.println(last);
+    // }
+    // }
+    // FindOccuranc(index + 1, str, element);
+    // }
+    /********************************************* */
+    // public static boolean SortedArr(int arr[], int index) {
+    // if (index == arr.length - 1) {
+    // return true;
+    // }
+    // if (arr[index] < arr[index + 1]) {
+    // return SortedArr(arr, index + 1);
+    // // System.out.println(true);
+    // } else {
+    // return false;
+    // }
+    // }
+     /********************************************* */
 
     public static void main(String[] args) {
         System.out.println("Recusion...");
-        FindOccuranc(0, "abaacdaefaah", 'a');
+        String str = "Hxello";
+           for(int i=0;i<str.length(); i++){
+                if(str.charAt(i) == 'x'){
+                     
+                }
+            //    System.out.println(str.charAt(i));
+           }
+        /********************************************* */
+        // Check sorted array using Recursion
+        // int arr[] = { 1, 2, 3, 4, 5, 8 };
+        // System.out.println( SortedArr(arr, 0));;
+
+        /********************************************* */
+        // Check sorted array using ittration
+        // int arr[] = {1,5,3,4,5};
+        // for(int i =0; i<arr.length-1; i++){
+        // // System.out.println(arr[i]);
+        // if(arr[i] < arr[i+1]){
+        // System.out.println(true);
+        // }else{
+        // System.out.println(false);
+        // }
+        // // System.out.print(arr[i] + " ");
+        // }
+
+        /********************************************* */
+        // FindOccuranc(0, "abaacdaefaah", 'a');
 
         /********************************************* */
         // Print Revesers string using Recursion
