@@ -129,17 +129,75 @@ public class Recusion {
     // return false;
     // }
     // }
-     /********************************************* */
+    /********************************************* */
+    // public static void MoveAllx(int index, int count, String str, String NewStr)
+    // {
+    // if (index == str.length()) {
+    // for (int i = 0; i < count; i++) {
+    // NewStr += 'x';
+    // }
+    // System.out.println(NewStr);
+    // return;
+    // }
+    // char currchar = str.charAt(index);
+    // if (currchar == 'x') {
+    // count++;
+    // MoveAllx(index + 1, count, str, NewStr);
+    // } else {
+    // NewStr = NewStr + currchar;
+    // MoveAllx(index + 1, count, str, NewStr);
+    // }
+    // }
 
     public static void main(String[] args) {
         System.out.println("Recusion...");
-        String str = "Hxello";
-           for(int i=0;i<str.length(); i++){
-                if(str.charAt(i) == 'x'){
-                     
-                }
-            //    System.out.println(str.charAt(i));
-           }
+        // Remove dublicates
+        String str = "abbcccda";
+        // if()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /********************************************* */
+        // Move x using Recursion
+        // MoveAllx(0, 0, "axbcxxd", "");
+
+        /********************************************* */
+        // Move x using ittration;
+        // String str = "Hxellxxxo";
+        // int count = 0;
+        // for (int i = 0; i < str.length(); i++) {
+        // if (str.charAt(i) == 'x') {
+        // count++;
+        // }
+        // // System.out.println(str.charAt(i));
+        // }
+        // System.out.println(count);
+        // String NewStr = "";
+        // for(int i =0; i<count;i++){
+        // NewStr += 'x';
+        // }
+        // System.out.println(NewStr);
+
         /********************************************* */
         // Check sorted array using Recursion
         // int arr[] = { 1, 2, 3, 4, 5, 8 };
