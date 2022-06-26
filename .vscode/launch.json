@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Trees",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.Trees",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleCal",
+            "request": "launch",
+            "mainClass": "JavaProject.SimpleCal",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Recusion",
             "request": "launch",
             "mainClass": "Questions.ApniKaksha.Recusion",
