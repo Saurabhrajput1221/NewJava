@@ -1,4 +1,4 @@
-package Questions;
+package Questions.ApniKaksha;
 
 import java.util.Scanner;
 
