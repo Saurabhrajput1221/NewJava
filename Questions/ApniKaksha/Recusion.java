@@ -1,5 +1,14 @@
 package Questions.ApniKaksha;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.lang.model.element.NestingKind;
+
+// import java.util.Map;
+
+// import javax.swing.text.html.HTMLDocument.RunElement;
+
 // import javax.print.DocFlavor.STRING;
 // import javax.sound.sampled.ReverbType;
 
@@ -130,59 +139,126 @@ public class Recusion {
     // }
     // }
     /********************************************* */
-    // public static void MoveAllx(int index, int count, String str, String NewStr)
-    // {
-    // if (index == str.length()) {
-    // for (int i = 0; i < count; i++) {
-    // NewStr += 'x';
+
+    // public static void MoveAllx(int index , int count , String str , String
+    // newStr){
+    // if(index == str.length()){
+    // for(int i =0; i<count; i++){
+    // newStr += 'x';
     // }
-    // System.out.println(NewStr);
+    // System.out.println(newStr);
     // return;
     // }
     // char currchar = str.charAt(index);
-    // if (currchar == 'x') {
+    // if(currchar== 'x'){
     // count++;
-    // MoveAllx(index + 1, count, str, NewStr);
+    // MoveAllx(index+1, count, str, newStr);
+    // }else{
+    // newStr += currchar;
+    // MoveAllx(index+1, count, str, newStr);
+    // }
+    // }
+    /********************************************* */
+    // I did not understand DublicatesChar question
+    // public static boolean[] Allchar = new boolean[26];
+
+    // public static void DublicatesChar(String str, int index, String Newstr) {
+    // if (index == str.length()) {
+    // System.out.println(Newstr);
+    // return;
+    // }
+    // char currchar = str.charAt(index);
+    // // System.out.print(currchar);
+    // if (Allchar[currchar - 'a']) {
+    // DublicatesChar(str, index + 1, Newstr);
     // } else {
-    // NewStr = NewStr + currchar;
-    // MoveAllx(index + 1, count, str, NewStr);
+    // Newstr += currchar;
+    // Allchar[currchar - 'a'] = true;
+    // DublicatesChar(str, index + 1, Newstr);
     // }
     // }
+    /********************************************* */
+    // subsquences of String
+    // public static void SubSrings(int index, String str, String newString) {
+    // if (index == str.length()) {
+    // System.out.println(newString + " ");
+    // return;
+    // } else {
+
+    // char currchar = str.charAt(index);
+
+    // SubSrings(index + 1, str, newString + currchar);
+
+    // SubSrings(index + 1, str, newString);
+
+    // }
+    // }
+    /********************************************* */
+    // Print all Unique subsquences of String
+    // public static void subsquencesUnique(int index, String str, String newstr ,
+    // HashSet<String> set ){
+    // if(index == str.length()){
+    // if(set.contains(newstr)){
+    // return;
+    // }else{
+    // System.out.println(newstr);
+    // set.add(newstr);
+    // return;
+    // }
+
+    // }
+    // char currchar = str.charAt(index);
+
+    // subsquencesUnique(index+1, str, newstr+ currchar , set);
+    // subsquencesUnique(index+1, str, newstr , set);
+    // }
+    // /********************************************* */
+    public static String[] keypad = { ".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz" };
+
+    public static void Printcomb(int index, String str, String Combination) {
+        if (index == str.length()) {
+            System.out.println(Combination);
+            return;
+        }
+        char currchar = str.charAt(index);
+        // System.out.println(currchar);
+        // mapping print 1st number for ex. "25" output will be "def"
+        String mapping = keypad[currchar - '0'];
+        // System.out.println(mapping.length());
+        for (int i = 0; i < mapping.length(); i++) {
+            System.out.print(mapping.charAt(i));
+            // Printcomb(index + 1, str, Combination + mapping.charAt(i));
+          
+        }
+    }
 
     public static void main(String[] args) {
         System.out.println("Recusion...");
-        // Remove dublicates
-        String str = "abbcccda";
-        // if()
+        /********************************************* */
+        // sol Once more time
+        Printcomb(0, "23", "");
 
+        /********************************************* */
+        // // HashSet only store Unique String
+        // HashSet<String> set = new HashSet<>();
+        // subsquencesUnique(0, "aaa", "" , set);
 
+        /********************************************* */
+        /********************************************* */
+        /********************************************* */
+        // subsquences of String
+        // SubSrings(0, "abc", "");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        /********************************************* */
+        // Remove dublicates . I did not understand DublicatesChar question
+        // DublicatesChar("abbccda", 0, "");
 
         /********************************************* */
         // Move x using Recursion
-        // MoveAllx(0, 0, "axbcxxd", "");
+        // MoveAllx(0, 0, "axbcxxxd", "");
 
         /********************************************* */
-        // Move x using ittration;
+        // Move x using ittration; I am not able to sol Below question using ittration;
         // String str = "Hxellxxxo";
         // int count = 0;
         // for (int i = 0; i < str.length(); i++) {
@@ -193,7 +269,7 @@ public class Recusion {
         // }
         // System.out.println(count);
         // String NewStr = "";
-        // for(int i =0; i<count;i++){
+        // for (int i = 0; i < count; i++) {
         // NewStr += 'x';
         // }
         // System.out.println(NewStr);
@@ -220,11 +296,11 @@ public class Recusion {
         // FindOccuranc(0, "abaacdaefaah", 'a');
 
         /********************************************* */
-        // Print Revesers string using Recursion
+        // Print Revesers String using Recursion
         // String str = "Nitin";
         // ReString(str.length() - 1, str);
         /********************************************* */
-        // Print Revesers string using ittration
+        // Print Revesers String using ittration
         // String str = "Hello";
         // for(int i =str.length()-1; i>=0 ; i--){
         // System.out.println(str.charAt(i));
