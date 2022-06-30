@@ -1,6 +1,8 @@
 package Questions.GreeksOfGreeks;
 
-import java.util.Scanner;
+// import java.util.Scanner;
+
+// import Questions.ApniKaksha.str;
 
 public class Arrays_Questions {
 
@@ -21,8 +23,59 @@ public class Arrays_Questions {
     // System.out.println(min);
     // }
     /************************************************************************** */
+    // Print Revers Array
+    // public static void RevArray(int arr[], int n) {
+
+    // if (n == arr.length) {
+    // // System.out.println(arr);
+    // }
+    // for (int i = arr.length - 1; i >= 0; i--) {
+    // // System.out.println(arr[i]);
+    // }
+    // }
+    /************************************************************************** */
+    // public static void ReveArray(int arr[], int start, int end) {
+    // int temp;
+    // while (start < end) {
+    // temp = arr[start];
+    // arr[start] = arr[end];
+    // arr[end] = temp;
+    // start++;
+    // end--;
+
+    // }
+    // }
+
+    // public static void PrintArr(int arr[], int n) {
+    // for (int i = 0; i <= n; i++) {
+    // System.out.print(arr[i] + " ");
+    // }
+    // System.out.println();
+    // }
+    /************************************************************************** */
+
     public static void main(String args[]) {
         System.out.println("hello");
+        /************************************************************************** */
+        // Print Revese of Array
+
+        // int arr[] = { 1, 2, 3, 4, 5, 6 };
+        // System.out.println("Printed orignal Arry ");
+        // PrintArr(arr, 5);
+        // System.out.println("Reversed Array ");
+        // ReveArray(arr, 0, 5);
+
+        // PrintArr(arr, 5);
+
+        /************************************************************************** */
+        // int arr[] = { 4, 5, 1, 2 };
+        // int n = arr.length;
+        // RevArray(arr, n);
+        /************************************************************************** */
+        // int arr[] = {4,5,1,2};
+        // for(int i=arr.length-1; i>=0; i--){
+        // System.out.print(arr[i] +" ");
+        // }
 
         /************************************************************************** */
         // int items[] = {1000, 11, 445, 1, 330, 3000 };
