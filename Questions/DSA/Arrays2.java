@@ -1,4 +1,4 @@
-package DSA;
+package Questions.DSA;
 // import javax.swing.tree.RowMapper;
 
 public class Arrays2 {

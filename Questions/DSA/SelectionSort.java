@@ -1,4 +1,4 @@
-package DSA;
+package Questions.DSA;
 
 public class SelectionSort {
     static void SelectionSortArr(int[] arr) {

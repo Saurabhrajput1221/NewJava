@@ -1,4 +1,4 @@
-package DSA;
+package Questions.DSA;
 
 public class QuickSort2 {
     public static int partition(int arr[], int low, int high) {

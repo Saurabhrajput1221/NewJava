@@ -1,4 +1,4 @@
-package DSA;
+package Questions.DSA;
 // Every Node store the current value and Next Node
 class Node {
     // we created integer to store the value

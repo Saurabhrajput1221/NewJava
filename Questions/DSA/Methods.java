@@ -1,4 +1,4 @@
-package DSA;
+package Questions.DSA;
 public class Methods {
     static int add(int a, int b) {
         return a + b;

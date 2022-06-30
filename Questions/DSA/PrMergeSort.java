@@ -1,4 +1,4 @@
-package DSA;
+package Questions.DSA;
 
 public class PrMergeSort {
     static void conquer(int[] arr, int mid, int si, int ei) {
