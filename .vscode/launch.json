@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch str",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.str",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello2",
+            "request": "launch",
+            "mainClass": "Questions.GreeksOfGreeks.Hello2",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Questions.GreeksOfGreeks.Hello",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Trees",
             "request": "launch",
             "mainClass": "Questions.ApniKaksha.Trees",
