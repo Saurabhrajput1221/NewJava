@@ -1,5 +1,7 @@
 package Questions.GreeksOfGreeks;
 
+import java.util.Arrays;
+
 import javax.sound.sampled.Mixer;
 
 // import java.util.Scanner;
@@ -75,9 +77,36 @@ public class Arrays_Questions {
     // return Maximum;
     // }
     /************************************************************************** */
-
+    // public static boolean Dublicate(int arr[]){
+    // Arrays.sort(arr);
+    // for(int i =0 ;i<arr.length-1; i++){
+    // System.out.println(arr[i]);
+    // if( arr[i] == arr[i+1]){
+    // return true;
+    // }
+    // }
+    // return false;
+    // }
+    /************************************************************************** */
     public static void main(String args[]) {
         System.out.println("hello");
+        /************************************************************************** */
+        // int arr[] = {1,2,3,1};
+        // System.out.println( Dublicate(arr));;
+        /************************************************************************** */
+        // Dublicate Array using ittration
+        // int arr[] = { 1, 2, 3, 1 };
+        // int n = arr[0];
+        // for (int i = 1; i < arr.length; i++) {
+        //     if (n == arr[i]) {
+        //         System.out.println("true");
+        //     } else {
+
+        //         System.out.println("false");
+        //     }
+        // }
+
+        /************************************************************************** */
         // Maximum SubArray
         // int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
         // System.out.print(SubArray(arr));
