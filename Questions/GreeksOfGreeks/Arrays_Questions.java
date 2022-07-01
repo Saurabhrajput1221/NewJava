@@ -1,5 +1,7 @@
 package Questions.GreeksOfGreeks;
 
+import javax.sound.sampled.Mixer;
+
 // import java.util.Scanner;
 
 // import Questions.ApniKaksha.str;
@@ -53,10 +55,54 @@ public class Arrays_Questions {
     // System.out.println();
     // }
     /************************************************************************** */
+    // Maximum SubArray
+
+    // public static int SubArray(int arr[]) {
+    // int Maximum = Integer.MIN_VALUE;
+    // int sum = 0;
+    // if (arr.length == 0) {
+    // return 0;
+    // }
+    // for (int i = 0; i < arr.length; i++) {
+    // sum += arr[i];
+    // if (sum > Maximum) {
+    // Maximum = sum;
+    // }
+    // if (sum <= 0) {
+    // sum = 0;
+    // }
+    // }
+    // return Maximum;
+    // }
+    /************************************************************************** */
 
     public static void main(String args[]) {
         System.out.println("hello");
+        // Maximum SubArray
+        // int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        // System.out.print(SubArray(arr));
         /************************************************************************** */
+        // Maximum SubArray using ittreation
+        // int arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+
+        // int Maximum = Integer.MIN_VALUE;
+        // // int Maximum = 0; // maximum = 0 also work
+        // int sum = 0;
+        // for (int i = 0; i < arr.length; i++) {
+        // sum += arr[i];
+        // if (sum > Maximum) {
+        // Maximum = sum;
+        // }
+        // if (sum <= 0) {
+        // sum = 0;
+
+        // }
+        // System.out.println("sum is "+ sum);
+        // }
+
+        // System.out.println(Maximum);
+        /************************************************************************** */
+
         // Print Revese of Array
 
         // int arr[] = { 1, 2, 3, 4, 5, 6 };
