@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Arrays_Questions",
             "request": "launch",
+            "mainClass": "Questions.GreeksForGreeks.Arrays_Questions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrays_Questions",
+            "request": "launch",
             "mainClass": "Questions.GreeksOfGreeks.Arrays_Questions",
             "projectName": "Java_cb0dbbcd"
         },

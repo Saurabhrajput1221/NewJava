@@ -1,4 +1,4 @@
-package Questions.GreeksOfGreeks;
+package Questions.GreeksForGreeks;
 
 import java.util.Arrays;
 
@@ -87,13 +87,24 @@ public class Arrays_Questions {
     // }
     // return false;
     // }
+    /***************************************** */
+    // Below code also valid for dublicate numbers
+    // public static boolean Dublicate(int arr[]){
+    //   for(int i=0; i<arr.length-1;i++){
+    //       if(arr[0] == arr[i+1]){
+    //          return true;
+    //       }
+    //   }
+    //   return false;
+    // }
     /************************************************************************** */
     public static void main(String args[]) {
         System.out.println("hello");
         /************************************************************************** */
-        // int arr[] = {1,2,3,1};
+        // int arr[] = {1,2,3,6};
         // System.out.println( Dublicate(arr));;
         /************************************************************************** */
+     
         // Dublicate Array using ittration
         // int arr[] = { 1, 2, 3, 1 };
         // int n = arr[0];
