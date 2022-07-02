@@ -1,0 +1,14 @@
+Easy Questions
+1.Maximum and Minimum Element in an Array	(sol)
+2.	Reverse the Array		(sol)
+3.	Maximum-Subarray	(sol)
+4.	Contains Duplicate (sol)
+5.	Chocolate Distribution Problem (sol)
+6.  Search an Element in a Sorted and Pivoted Array(Unsol)
+
+madium Questions
+7. Next Permutation (Unsol)
+8. Best time to Buy and Sell Stock (Unsol)
+9. Repeat and Missing Number Array (Unsol)
+10. Kth-Largest Element in an Array (Unsol)
+11. Trapping Rain Water (Unsol)

@@ -1,8 +1,12 @@
 package Questions.GreeksForGreeks;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
-import javax.sound.sampled.Mixer;
+// import java.net.Socket;
+// import java.util.Arrays;
+
+// import javax.sound.sampled.Mixer;
 
 // import java.util.Scanner;
 
@@ -90,31 +94,91 @@ public class Arrays_Questions {
     /***************************************** */
     // Below code also valid for dublicate numbers
     // public static boolean Dublicate(int arr[]){
-    //   for(int i=0; i<arr.length-1;i++){
-    //       if(arr[0] == arr[i+1]){
-    //          return true;
-    //       }
-    //   }
-    //   return false;
+    // for(int i=0; i<arr.length-1;i++){
+    // if(arr[0] == arr[i+1]){
+    // return true;
+    // }
+    // }
+    // return false;
+    // }
+    /****************************************************************************/
+    // Chocolate Distribution
+    // public static int ChocolateDis(int arr[], int m) {
+    // int min = Integer.MAX_VALUE;
+    // Arrays.sort(arr);
+    // if (arr.length == 0 || m == 0) {
+    // return 0;
+    // }
+    // if (m > arr.length) {
+    // return -1;
+    // }
+    // for (int i = 0; i + m - 1 < arr.length; i++) {
+    // // System.out.println("ans of index "+ arr[i]);
+    // int diff = arr[i + m - 1] - arr[i];
+    // // System.out.println(diff);
+    // if (diff < min) {
+    // min = diff;
+    // }
+    // }
+    // return min;
     // }
     /************************************************************************** */
+
+    // Search Element using function
+    // public static void Search(int arr[], int key) {
+    // if (arr.length == 0) {
+    // System.out.println("not able to find index ");
+    // }
+    // for (int i = 0; i < arr.length; i++) {
+    // if (key == arr[i]) {
+    // System.out.println("index is " + i);
+    // }
+    // }
+    // }
+    /************************************************************************** */
+
+    // Search an Element in a Sorted and Pivoted Array
+
     public static void main(String args[]) {
         System.out.println("hello");
+
+        /************************************************************************** */
+        // int arr[] = {5, 6,7,8,9,10,1,2,3};
+        // int key = 10;
+        // Search(arr, key);
+        // for (int i = 0; i < arr.length ; i++) {
+        // if (key == arr[i]) {
+        // System.out.println("index of key is " + i);
+        // } else {
+        // System.out.println("sorry not able to find index key ");
+        // }
+        // }
+        /************************************************************************** */
+        // Chocolate Distribution
+        // int arr[] = { 3, 4, 1, 9, 56, 7, 9, 12 };
+        // int m = 5;
+        // System.out.println(ChocolateDis(arr, m));
+
+        // // Arrays.sort(arr);
+        // // for(int i =0;i<arr.length; i++){
+        // // System.out.println(arr[i]);
+        // // }
+
         /************************************************************************** */
         // int arr[] = {1,2,3,6};
         // System.out.println( Dublicate(arr));;
         /************************************************************************** */
-     
+
         // Dublicate Array using ittration
         // int arr[] = { 1, 2, 3, 1 };
         // int n = arr[0];
         // for (int i = 1; i < arr.length; i++) {
-        //     if (n == arr[i]) {
-        //         System.out.println("true");
-        //     } else {
+        // if (n == arr[i]) {
+        // System.out.println("true");
+        // } else {
 
-        //         System.out.println("false");
-        //     }
+        // System.out.println("false");
+        // }
         // }
 
         /************************************************************************** */
