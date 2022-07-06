@@ -198,11 +198,36 @@ public class Arrays_Questions {
     // return profit;
     // }
     /************************************************************************** */
-  
+    // Repeat and Missing Number Array
+
+    public static void printTwoElements(int arr[], int n) {
+        for (int i = 0; i < n; i++) {
+            int abs = Math.abs(arr[i]);
+            if (arr[abs - 1] > 0) {
+                arr[abs - 1] = -arr[abs - 1];
+                // System.out.println(arr[abs-1]);
+            } else {
+                System.out.println("Repeated element " + abs);
+            }
+        }
+        System.out.println("Missing Element ");
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > 0) {
+                System.out.println(i + 1);
+            }
+        }
+    }
+
+    /************************************************************************** */
+
     public static void main(String args[]) {
         System.out.println("hello");
-        // int arr[] = { 7, 3, 4, 5, 5, 6, 2 };
-       
+        /************************************************************************** */
+
+        // Repeat and Missing Number Array
+        int arr[] = { 1, 3, 4, 5, 4 };
+        int n = arr.length;
+        printTwoElements(arr, n);
 
         /************************************************************************** */
         // MaxProfit using recursion
