@@ -1,5 +1,9 @@
 package Questions.GreeksForGreeks;
 
+import java.util.Arrays;
+
+import javax.security.auth.kerberos.KerberosPrincipal;
+
 // import java.lang.reflect.Array;
 // import java.util.Arrays;
 // import java.util.Vector;
@@ -176,27 +180,53 @@ public class Arrays_Questions {
 
     /************************************************************************** */
 
-    public static int MaxProfit(int price[]) {
-        int s = Integer.MAX_VALUE;
-        int Op = 0;
-       int Pot = 0;
-
-       for(int i =0 ;i<price.length ; i++){
-           if(price[i]< s){
-               s = price[i];
-           }
-            Pot = price[i] - Op;
-            if(Op<Pot){
-                Op = Pot;
-            }
-        }
-        return Op;
-    }
-
+    // public static int MaxProfit(int price[]) {
+    // int min = price[0];
+    // int profit = 0;
+    // if (price.length <= 1) {
+    // return 0;
+    // }
+    // for (int i = 1; i < price.length; i++) {
+    // if (price[i] < min) {
+    // min = price[i];
+    // } else {
+    // if (price[i] - min > profit) {
+    // profit = price[i] - min;
+    // }
+    // }
+    // }
+    // return profit;
+    // }
+    /************************************************************************** */
+  
     public static void main(String args[]) {
         System.out.println("hello");
-       int price[] = {7,6,4,3,1};
-       System.out.println(MaxProfit(price));
+        // int arr[] = { 7, 3, 4, 5, 5, 6, 2 };
+       
+
+        /************************************************************************** */
+        // MaxProfit using recursion
+        // int price[] = { 7, 1, 5, 3, 9, 4 };
+        // System.out.println(MaxProfit(price));
+        /************************************************************************** */
+        // MaxProfit using ittration
+        // // int price[] = { 7 ,1,5,3,6,4};
+        // int min =price[0];
+        // int profit = 0;
+        // for(int i =0; i<price.length; i++){
+        // if(price.length<=1){
+        // System.out.println("No profit Earned");
+        // }
+        // if(price[i]<min){
+        // min = price[i];
+        // }else {
+        // if(price[i]-min >profit){
+        // profit = price[i] - min;
+        // }
+        // }
+        // }
+        // System.out.println(profit);
+
         /************************************************************************** */
         // Next permutation problem
         // int nums[] = { 1,1,5 };
