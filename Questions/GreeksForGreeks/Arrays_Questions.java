@@ -1,8 +1,8 @@
 package Questions.GreeksForGreeks;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
-import javax.security.auth.kerberos.KerberosPrincipal;
+// import javax.security.auth.kerberos.KerberosPrincipal;
 
 // import java.lang.reflect.Array;
 // import java.util.Arrays;
@@ -200,34 +200,62 @@ public class Arrays_Questions {
     /************************************************************************** */
     // Repeat and Missing Number Array
 
-    public static void printTwoElements(int arr[], int n) {
-        for (int i = 0; i < n; i++) {
-            int abs = Math.abs(arr[i]);
-            if (arr[abs - 1] > 0) {
-                arr[abs - 1] = -arr[abs - 1];
-                // System.out.println(arr[abs-1]);
-            } else {
-                System.out.println("Repeated element " + abs);
-            }
-        }
-        System.out.println("Missing Element ");
-        for (int i = 0; i < n; i++) {
-            if (arr[i] > 0) {
-                System.out.println(i + 1);
-            }
-        }
-    }
-
+    // public static void printTwoElements(int arr[], int n) {
+    // for (int i = 0; i < n; i++) {
+    // int abs = Math.abs(arr[i]);
+    // if (arr[abs - 1] > 0) {
+    // arr[abs - 1] = -arr[abs - 1];
+    // // System.out.println(arr[abs-1]);
+    // } else {
+    // System.out.println("Repeated element " + abs);
+    // }
+    // }
+    // System.out.println("Missing Element ");
+    // for (int i = 0; i < n; i++) {
+    // if (arr[i] > 0) {
+    // System.out.println(i + 1);
+    // }
+    // }
+    // }
     /************************************************************************** */
+
+    public static int trap(int[] height) {
+        int n = height.length;
+        int res = 0;
+        int left[] = new int[n];
+        int right[] = new int[n];
+
+        int max = height[0];
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, height[i]);
+            left[i] = max;
+        }
+
+        max = height[n - 1];
+        for (int i = n - 1; i >= 0; i--) {
+            max = Math.max(max, height[i]);
+            right[i] = max;
+        }
+
+        for (int i = 0; i < n; i++) {
+            res += Math.min(left[i], right[i]) - height[i];
+        }
+
+        return res;
+    }
 
     public static void main(String args[]) {
         System.out.println("hello");
-        /************************************************************************** */
+        // int heigth[] = {4,2,0,3,2,5};
+        int heigth[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
 
-        // Repeat and Missing Number Array
-        int arr[] = { 1, 3, 4, 5, 4 };
-        int n = arr.length;
-        printTwoElements(arr, n);
+        System.out.println(trap(heigth));
+
+        /************************************************************************** */
+        // // Repeat and Missing Number Array
+        // int arr[] = { 1, 3, 4, 5, 4 };
+        // int n = arr.length;
+        // printTwoElements(arr, n);
 
         /************************************************************************** */
         // MaxProfit using recursion

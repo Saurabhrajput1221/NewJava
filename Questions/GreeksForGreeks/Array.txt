@@ -9,5 +9,5 @@ madium Questions
 7. Next Permutation                  (Sol but no understand)
 8. Best time to Buy and Sell Stock   (sol)
 9. Repeat and Missing Number Array   (sol but ratta)
-10. Kth-Largest Element in an Array  (Unsol)
+10. Kth-Largest Element in an Array  (Unsol) code is easy but you need to learn Queue
 11. Trapping Rain Water              (Unsol) 

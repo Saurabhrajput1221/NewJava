@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Queuee",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.Queuee",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Queue",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.Queue",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Arrays_Questions",
             "request": "launch",
             "mainClass": "Questions.GreeksForGreeks.Arrays_Questions",
