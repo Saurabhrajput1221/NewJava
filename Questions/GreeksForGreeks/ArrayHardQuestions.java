@@ -2,6 +2,8 @@ package Questions.GreeksForGreeks;
 
 import java.util.Arrays;
 
+import javax.swing.text.html.HTMLDocument.RunElement;
+
 import Questions.ApniKaksha.str;
 
 public class ArrayHardQuestions {
@@ -18,7 +20,7 @@ public class ArrayHardQuestions {
     // }
 
     /****************************************************************** */
-	// Trapping Rain Water
+    // Trapping Rain Water
     // public static int trap(int height[]) {
     // int Rmax = 0;
     // int Lmax = 0;
@@ -46,10 +48,34 @@ public class ArrayHardQuestions {
     // return result;
     // }
     /****************************************************************** */
+    public static int productExceptSelf(int arr[]) {
+        int curr = 1;
+        int n = arr.length - 1;
+        int ans[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            ans[i] = curr;
+            curr *= arr[i];
+        }
+        curr = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            ans[i] *= curr;
+            curr *= arr[i];
+        }
+        // print array
+        for (int i = 0; i < ans.length; i++) {
+            System.out.println(ans);
+        }
+        return curr;
+
+    }
+    /****************************************************************** */
 
     public static void main(String[] args) {
-
         System.out.println("Array");
+        /****************************************************************** */
+        // int arr[] = { 1, 2, 3, 4 };
+        // productExceptSelf(arr);
+
         /****************************************************************** */
         // Trapping Rain Water
         // int height[] = { 4, 2, 0, 3, 2, 5 };
