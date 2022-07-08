@@ -10,7 +10,7 @@ madium Questions
 8. Best time to Buy and Sell Stock   (sol)
 9. Repeat and Missing Number Array   (sol but ratta)
 10. Kth-Largest Element in an Array  (sol) 
-11. Trapping Rain Water              (Unsol) 
+11. Trapping Rain Water              (sol) 
 12. Product of Array Except Self     (Unsol) 
 13. Maximum Product Subarray         (Unsol) 
 14. Find Minimum in Rotated Sorted Array    (Unsol) 

@@ -2,6 +2,8 @@ package Questions.GreeksForGreeks;
 
 import java.util.Arrays;
 
+import Questions.ApniKaksha.str;
+
 public class ArrayHardQuestions {
     /****************************************************************** */
     // Kth Largest Element in an Array
@@ -16,14 +18,48 @@ public class ArrayHardQuestions {
     // }
 
     /****************************************************************** */
+	// Trapping Rain Water
+    // public static int trap(int height[]) {
+    // int Rmax = 0;
+    // int Lmax = 0;
+    // int result = 0;
+    // int i = 0;
+    // int j = height.length - 1;
+
+    // while (i <= j) {
+    // if (height[i] <= height[j]) {
+    // if (Lmax < height[i]) {
+    // Lmax = height[i];
+    // } else {
+    // result += Lmax - height[i];
+    // }
+    // i++;
+    // } else {
+    // if (Rmax < height[j]) {
+    // Rmax = height[j];
+    // } else {
+    // result += Rmax - height[j];
+    // }
+    // j--;
+    // }
+    // }
+    // return result;
+    // }
+    /****************************************************************** */
 
     public static void main(String[] args) {
-        // Kth Largest Element in an Array
+
         System.out.println("Array");
+        /****************************************************************** */
+        // Trapping Rain Water
+        // int height[] = { 4, 2, 0, 3, 2, 5 };
+        // // System.out.println(height.length-1 + " length of hi.");
+        // // int height[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+        // System.out.println(trap(height));
         /****************************************************************** */
         // int nums[] = { 3, 2, 1, 5, 6, 4 };
         // int k = 4;
-        // System.out.println(" ans " + findLargestElm(nums, k));
+        // System.out.println("ans " + findLargestElm(nums, k));
 
         /****************************************************************** */
 
