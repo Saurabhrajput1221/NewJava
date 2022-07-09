@@ -1,9 +1,7 @@
 package Questions.GreeksForGreeks;
 
 import java.util.Arrays;
-
 import javax.swing.text.html.HTMLDocument.RunElement;
-
 import Questions.ApniKaksha.str;
 
 public class ArrayHardQuestions {
@@ -48,31 +46,59 @@ public class ArrayHardQuestions {
     // return result;
     // }
     /****************************************************************** */
-    public static int productExceptSelf(int arr[]) {
-        int curr = 1;
-        int n = arr.length - 1;
-        int ans[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            ans[i] = curr;
-            curr *= arr[i];
-        }
-        curr = 1;
-        for (int i = n - 1; i >= 0; i--) {
-            ans[i] *= curr;
-            curr *= arr[i];
-        }
-        // print array
-        for (int i = 0; i < ans.length; i++) {
-            System.out.println(ans);
-        }
-        return curr;
-
-    }
+    // Product of Array Except Self
+    // public static int productExceptSelf(int arr[]) {
+    // int curr = 1;
+    // int n = arr.length - 1;
+    // int ans[] = new int[n];
+    // for (int i = 0; i < n; i++) {
+    // ans[i] = curr;
+    // curr *= arr[i];
+    // }
+    // curr = 1;
+    // for (int i = n - 1; i >= 0; i--) {
+    // ans[i] *= curr;
+    // curr *= arr[i];
+    // }
+    // // print array
+    // for (int i = 0; i < ans.length; i++) {
+    // System.out.println(ans);
+    // }
+    // return curr;
+    // }
     /****************************************************************** */
+    
+    public static int maxProduct(int arr[]) {
+        int result = Integer.MIN_VALUE;
+        int product = 1;
+
+        for (int i = 0; i < arr.length; i++) {
+            product *= arr[i];
+            result = Math.max(product, result);
+            System.out.println("Result " + result);
+            if (product == 0) {
+                return 1;
+            }
+        }
+        product = 1;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            product *= arr[i];
+            result = Math.max(product, result);
+            if (product == 0) {
+                return 0;
+            }
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
         System.out.println("Array");
+        // int arr[] = { 2, 3, -2, 4 };
+        int arr[] = {0,2};
+        // int arr[] = { -2, 0, -1 };
+        System.out.println(maxProduct(arr));
         /****************************************************************** */
+        // Product of Array Except Self
         // int arr[] = { 1, 2, 3, 4 };
         // productExceptSelf(arr);
 
