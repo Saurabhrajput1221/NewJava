@@ -1,6 +1,9 @@
 package Questions.GreeksForGreeks;
 
 import java.util.Arrays;
+
+import javax.lang.model.element.Element;
+import javax.lang.model.util.ElementScanner14;
 import javax.swing.text.html.HTMLDocument.RunElement;
 import Questions.ApniKaksha.str;
 
@@ -67,36 +70,95 @@ public class ArrayHardQuestions {
     // return curr;
     // }
     /****************************************************************** */
-    
-    public static int maxProduct(int arr[]) {
-        int result = Integer.MIN_VALUE;
-        int product = 1;
 
-        for (int i = 0; i < arr.length; i++) {
-            product *= arr[i];
-            result = Math.max(product, result);
-            System.out.println("Result " + result);
-            if (product == 0) {
-                return 1;
-            }
+    // public static int maxProduct(int arr[]) {
+    // int result = Integer.MIN_VALUE;
+    // int product = 1;
+
+    // for (int i = 0; i < arr.length; i++) {
+    // product *= arr[i];
+    // result = Math.max(product, result);
+    // System.out.println("Result " + result);
+    // if (product == 0) {
+    // return 1;
+    // }
+    // }
+    // product = 1;
+    // for (int i = arr.length - 1; i >= 0; i--) {
+    // product *= arr[i];
+    // result = Math.max(product, result);
+    // if (product == 0) {
+    // return 0;
+    // }
+    // }
+    // return result;
+    // }
+    /****************************************************************** */
+
+    // public static int findMin(int arr[]) {
+    //     int n = arr.length;
+    //     int start = 0;
+    //     int end = n - 1;
+    //     if (arr[start] <= arr[end]) {
+    //         return arr[start];
+    //     }
+    //     while (start <= end) {
+    //         int mid = start + (end - start) / 2;
+
+    //         if (arr[mid] > arr[mid + 1]) {
+    //             return arr[mid + 1];
+    //         } else if (arr[mid] < arr[mid - 1]) {
+    //             return arr[mid];
+    //         } else if (arr[start] < arr[mid]) {
+    //             start = mid + 1;
+    //         } else if (arr[mid] < arr[end]) {
+    //             end = mid - 1;
+    //         }
+    //     }
+    //     return -1;
+    // }
+
+    public static int findMin(int arr[]) {
+        int l = 0;
+        int r = arr.length - 1;
+        if (arr.length == 1) {
+            return arr[0];
         }
-        product = 1;
-        for (int i = arr.length - 1; i >= 0; i--) {
-            product *= arr[i];
-            result = Math.max(product, result);
-            if (product == 0) {
-                return 0;
-            }
+        if (arr[l] <= arr[r]) {
+            return arr[l];
         }
-        return result;
+        while(l<= r){
+            int mid = l +(r -l)/2;
+             if(arr[mid]> arr[mid+1]){
+                 return arr[mid+1];
+             }else if(arr[mid]< arr[mid-1]){
+                 return arr[mid];
+             }else if(arr[l]< arr[mid]){
+                 l = mid+1;
+
+             }
+             else if(arr[mid]<arr[r]){
+                 r = mid -1;
+             }
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
         System.out.println("Array");
+        // int arr[] = { 5, 6, 7, 8, 1, 2 };
+        // int arr[] = { 4, 5, 6, 7, 8, 0, 1, 3 };
+        int arr[] = { 11, 13, 15, 17 };
+        System.out.println(findMin(arr));
+
+        // for(int i=0 ; i<arr.length; i++){
+        // System.out.println(arr[i]);
+        // }
+        /****************************************************************** */
         // int arr[] = { 2, 3, -2, 4 };
-        int arr[] = {0,2};
+        // int arr[] = {0,2};
         // int arr[] = { -2, 0, -1 };
-        System.out.println(maxProduct(arr));
+        // System.out.println(maxProduct(arr));
         /****************************************************************** */
         // Product of Array Except Self
         // int arr[] = { 1, 2, 3, 4 };
