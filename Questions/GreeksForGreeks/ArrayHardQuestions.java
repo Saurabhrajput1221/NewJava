@@ -1,11 +1,19 @@
 package Questions.GreeksForGreeks;
 
+// import java.lang.annotation.Target;
+import java.util.ArrayList;
 import java.util.Arrays;
+// import java.util.EnumSet;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-import javax.lang.model.element.Element;
-import javax.lang.model.util.ElementScanner14;
-import javax.swing.text.html.HTMLDocument.RunElement;
-import Questions.ApniKaksha.str;
+// import javax.lang.model.element.Element;
+// import javax.lang.model.util.ElementScanner14;
+// import javax.swing.text.html.HTMLDocument.RunElement;
+
+// import AdvanceJava.Arraylist;
+// import Questions.ApniKaksha.str;
 
 public class ArrayHardQuestions {
     /****************************************************************** */
@@ -120,11 +128,40 @@ public class ArrayHardQuestions {
     // return -1;
     // }
     /****************************************************************** */
+    // 3 Sum ( understood but confusing)
+    public static List<List<Integer>> threesum(int arr[]) {
+        // public static int threesum(int arr[]) {
 
-    
+        Set<List<Integer>> res = new HashSet<>();
+        if (arr.length == 0) {
+            return new ArrayList<>(res);
+        }
+        Arrays.sort(arr);
+        for (int i = 0; i < arr.length - 2; i++) {
+            // int arr[] = { -1,0,1,2,-1,-4};
+            int j = i + 1;
+            int k = arr.length - 1;
+            while (j < k) {
+                int sum = arr[j] + arr[k];
+                if (sum == -arr[i]) {
+                    res.add(Arrays.asList(arr[i], arr[j], arr[k]));
+                    j++;
+                    k--;
+                } else if (sum > -arr[i]) {
+                    k--;
+                } else if (sum < -arr[i]) {
+                    j++;
+                }
+            }
+        }
+        return new ArrayList(res);
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Array");
-
+        int arr[] = { -1,0,1,2,-1,-4};
+        System.out.println(threesum(arr));
         /****************************************************************** */
         // Find Minimum in Rotated Sorted Array
         // int arr[] = { 5, 6, 7, 8, 1, 2 };

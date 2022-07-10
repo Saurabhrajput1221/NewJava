@@ -15,6 +15,6 @@ madium Questions
 13. Maximum Product Subarray         (sol) sol but All Testcases are not passed ! 
 14. Find Minimum in Rotated Sorted Array    (sol) 
 15. Find Pair with Sum in Sorted & Rotated Array (Unsol) 
-16. 3Sum                             (Unsol) 
+16. 3Sum                             (sol) understand but consfusing and need to know about List and HashSet functionality. 
 17. Container With Most Water        (Unsol) 
 18. Given Sum Pair                   (Unsol) 
