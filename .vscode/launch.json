@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch String_Questions",
+            "request": "launch",
+            "mainClass": "Questions.GreeksForGreeks.String_Questions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayHardQuestions",
             "request": "launch",
             "mainClass": "Questions.GreeksForGreeks.ArrayHardQuestions",
