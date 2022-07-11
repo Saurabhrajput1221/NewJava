@@ -157,9 +157,38 @@ public class ArrayHardQuestions {
     // return new ArrayList(res);
     // }
     /****************************************************************** */
+    // Container With Most Water
+    public static int MaxWater(int arr[]) {
+        int start = 0;
+        int end = arr.length - 1;
+        int MaxWater = 0;
+        while (start <= end) {
+            int Cap = (end - start) * Math.min(arr[start], arr[end]);
+            if (MaxWater < Cap) {
+                MaxWater = Cap;
+            }
+            if (arr[start] > arr[end]) {
+                end--;
+            } else {
+                start++;
+            }
+        }
+        return MaxWater;
+
+    }
+    /****************************************************************** */
 
     public static void main(String[] args) {
         System.out.println("Array");
+
+        /****************************************************************** */
+        // Container With Most Water
+        // int arr[] = {1,8,6,2,5,4,8,3,7};
+        // int arr[] = { 6, 4, 2, 5, 4, 6, 1, 3, 5 };
+        // int arr[] = {6,4,5,4,6,7,6};
+        // int arr[] = {1,7};
+        int arr[] = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        System.out.println(MaxWater(arr));
         /****************************************************************** */
         // 3 Sum
         // int arr[] = { -1,0,1,2,-1,-4};
