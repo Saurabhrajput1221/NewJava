@@ -9,7 +9,7 @@ public class String_Questions {
     // StringBuilder b = new StringBuilder();
     // for (int i = 0; i < s.length(); i++) {
     // if (Character.isLetter(s.charAt(i))) {
-        // To add at the last position using append
+    // To add at the last position using append
     // b.append(s.charAt(i));
     // // System.out.println(b);
     // }
@@ -25,25 +25,38 @@ public class String_Questions {
     // return true;
     // }
     /*************************************************************************** */
-    // valid Anagram 
-public static boolean isAnagram(String s , String t){
-     int cnt[] = new int[26];
-      if(s.length() != t.length()){
-          return false;
-      }
-      for(char c : s.toCharArray()){
-          cnt[c - 'a']++;
-      }
-      for(char c : t.toCharArray()){
-          cnt[c - 'a']--;
-      }
-      return true;
-}
+    // valid Anagram
+    
+    public static boolean isAnagram(String s, String t) {
+        int[] alpha = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            alpha[s.charAt(i) - 'a']++;
+            // System.out.println(alpha[s.charAt(i) - 'a'] + " Add to string");
+
+        }
+        for (int i = 0; i < t.length(); i++) {
+            alpha[t.charAt(i) - 'a']--;
+            // System.out.println(alpha[t.charAt(i) - 'a'] + " new removal string");
+            
+        }        
+        for (int i = 0; i < alpha.length; i++) {
+            // System.out.println(" aplpha char " + alpha[i]);
+            if (alpha[i] != 0) {
+                return false;
+            }
+        }        
+        return true;
+    }
+    
+    /*************************************************************************** */
     public static void main(String[] args) {
         System.out.println("String...........");
-        // valid Anagram 
-        String s = "tea";
-        String t = "atedf";
+
+        /*************************************************************************** */
+        // valid Anagram
+        String s = "raat";
+        String t = "caar";
         System.out.println(isAnagram(s, t));
 
         /*************************************************************************** */

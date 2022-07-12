@@ -1,6 +1,6 @@
 Easy Questions 
 1. valid Palindrome                (sol)
-2. valid Anagram                   (sol but Ratta (some methods are not understood))
+2. valid Anagram                   (sol )
 3. valid Parentheses               (Unsol)
 4. Remove Consecutive Characters   (Unsol)
 5. Longest Common Prefix           (Unsol)
