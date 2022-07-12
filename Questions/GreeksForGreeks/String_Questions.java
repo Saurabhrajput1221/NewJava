@@ -1,12 +1,12 @@
 package Questions.GreeksForGreeks;
 
-import java.rmi.dgc.Lease;
-import java.util.Stack;
+// import java.rmi.dgc.Lease;
+// import java.util.Stack;
 
-import javax.print.FlavorException;
-import javax.swing.text.FlowView.FlowStrategy;
+// import javax.print.FlavorException;
+// import javax.swing.text.FlowView.FlowStrategy;
 
-import Questions.ApniKaksha.str;
+// import Questions.ApniKaksha.str;
 
 public class String_Questions {
     // valid Palindrome
@@ -56,42 +56,59 @@ public class String_Questions {
     /*************************************************************************** */
     // valid parentheses sol at my Own
 
-    public static boolean parentheses(String s) {
-        Stack<Character> stk = new Stack<>();
-        for (int i = 0; i < s.length(); i++) {
-            Character curr = s.charAt(i);
+    // public static boolean parentheses(String s) {
+    // Stack<Character> stk = new Stack<>();
+    // for (int i = 0; i < s.length(); i++) {
+    // Character curr = s.charAt(i);
 
-            if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
-                stk.push(curr);
-            } else {
-                Character lastchar;
-                if (stk.isEmpty()) {
-                    return false;
-                } else {
-                    lastchar = stk.peek();
-                }
-                if (curr.equals(')') && !lastchar.equals('(')) {
-                    return false;
-                } else if (curr.equals(']') && !lastchar.equals('[')) {
-                    return false;
-                } else if (curr.equals('}') && !lastchar.equals('{')) {
-                    return false;
-                }
-                stk.pop();
-            }
+    // if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
+    // stk.push(curr);
+    // } else {
+    // Character lastchar;
+    // if (stk.isEmpty()) {
+    // return false;
+    // } else {
+    // lastchar = stk.peek();
+    // }
+    // if (curr.equals(')') && !lastchar.equals('(')) {
+    // return false;
+    // } else if (curr.equals(']') && !lastchar.equals('[')) {
+    // return false;
+    // } else if (curr.equals('}') && !lastchar.equals('{')) {
+    // return false;
+    // }
+    // stk.pop();
+    // }
 
-        }
-        return stk.isEmpty();
-    }
+    // }
+    // return stk.isEmpty();
+    // }
 
     /*************************************************************************** */
+    // Remove Consecutive Characters
+    public static String RConsecutiveChar(String s){
+        int n = s.length();
+        System.out.println("length of string " +n);
+        String res = "";
+        for(int i=0 ;i<n;i++){
+            if(i<n-1 && s.charAt(i) == s.charAt(i+1)){
+                continue;
+            }else{
+                res = res + s.charAt(i);
+            }
+        }
+        return res;
+    }
 
     public static void main(String[] args) {
         System.out.println("String...........");
+        // Remove Consecutive Characters
+        String s = "aabbaa";
+        System.out.println(RConsecutiveChar(s));;
+        /*************************************************************************** */
         // valid parentheses
-
-        String s = "[]{}()";
-        System.out.println(parentheses(s));
+        // String s = "[]{}()";
+        // System.out.println(parentheses(s));
 
         // Stack<Character> c = new Stack<>();
         // for (int i = 0; i < s.length(); i++) {
