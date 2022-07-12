@@ -6,13 +6,13 @@ Easy Questions
 5.	Chocolate Distribution Problem           (sol)
 
 madium Questions
-7. Next Permutation                  (Sol but no understand)
+7. Next Permutation                  (Sol but no understand) 
 8. Best time to Buy and Sell Stock   (sol)
 9. Repeat and Missing Number Array   (sol but ratta)
 10. Kth-Largest Element in an Array  (sol) 
 11. Trapping Rain Water              (sol) 
 12. Product of Array Except Self     (sol) 
 13. Maximum Product Subarray         (sol) sol but All Testcases are not passed ! 
-14. Find Minimum in Rotated Sorted Array    (sol) 
+14. Find Minimum in Rotated Sorted Array    (sol) revised
 15. 3Sum                             (sol) understand but consfusing and need to know about List and HashSet functionality. 
-16. Container With Most Water        (sol) 
+16. Container With Most Water        (sol) revised

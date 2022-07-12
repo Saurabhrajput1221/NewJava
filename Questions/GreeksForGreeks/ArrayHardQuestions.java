@@ -127,6 +127,7 @@ public class ArrayHardQuestions {
     // }
     // return -1;
     // }
+
     /****************************************************************** */
     // 3 Sum ( understood but confusing)
     // public static List<List<Integer>> threesum(int arr[]) {
@@ -177,11 +178,11 @@ public class ArrayHardQuestions {
     // }
     // /****************************************************************** */
 
-  
+
 
     public static void main(String[] args) {
         System.out.println("Array");
-        int arr[] = { 11, 15, 6, 7, 9, 10 };
+        // int arr[] = { 11, 15, 6, 7, 9, 10 };
       
 
         /****************************************************************** */

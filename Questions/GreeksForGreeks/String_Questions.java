@@ -1,5 +1,7 @@
 package Questions.GreeksForGreeks;
 
+import java.rmi.dgc.Lease;
+
 public class String_Questions {
     // valid Palindrome
     // public static boolean Ispalindrome(String s) {
@@ -7,6 +9,7 @@ public class String_Questions {
     // StringBuilder b = new StringBuilder();
     // for (int i = 0; i < s.length(); i++) {
     // if (Character.isLetter(s.charAt(i))) {
+        // To add at the last position using append
     // b.append(s.charAt(i));
     // // System.out.println(b);
     // }
@@ -22,11 +25,26 @@ public class String_Questions {
     // return true;
     // }
     /*************************************************************************** */
-     
-
+    // valid Anagram 
+public static boolean isAnagram(String s , String t){
+     int cnt[] = new int[26];
+      if(s.length() != t.length()){
+          return false;
+      }
+      for(char c : s.toCharArray()){
+          cnt[c - 'a']++;
+      }
+      for(char c : t.toCharArray()){
+          cnt[c - 'a']--;
+      }
+      return true;
+}
     public static void main(String[] args) {
         System.out.println("String...........");
-
+        // valid Anagram 
+        String s = "tea";
+        String t = "atedf";
+        System.out.println(isAnagram(s, t));
 
         /*************************************************************************** */
         // valid Palindrome
