@@ -1,5 +1,5 @@
 Easy Questions 
-1. valid Palindrome                (Unsol)
+1. valid Palindrome                (sol)
 2. valid Anagram                   (Unsol)
 3. valid Parentheses               (Unsol)
 4. Remove Consecutive Characters   (Unsol)
