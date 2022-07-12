@@ -6,6 +6,8 @@ import java.util.Stack;
 import javax.print.FlavorException;
 import javax.swing.text.FlowView.FlowStrategy;
 
+import Questions.ApniKaksha.str;
+
 public class String_Questions {
     // valid Palindrome
     // public static boolean Ispalindrome(String s) {
@@ -52,43 +54,43 @@ public class String_Questions {
     // return true;
     // }
     /*************************************************************************** */
-    // valid parentheses
-    public static String parentheses(String s) {
-        Stack<Character> stack = new Stack<>();
+    // valid parentheses sol at my Own
 
+    public static boolean parentheses(String s) {
+        Stack<Character> stk = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
+            Character curr = s.charAt(i);
 
-            Character current = s.charAt(i);
-            // System.out.print(current + " ");
-
-            if (current.equals('(') || current.equals('{') || current.equals('[')) {
-                stack.push(current);
-                System.out.println(stack + " this is current stack");
+            if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
+                stk.push(curr);
             } else {
-                Character lastopene;
-                if (stack.isEmpty()) {
-                    return "false";
+                Character lastchar;
+                if (stk.isEmpty()) {
+                    return false;
                 } else {
-                    lastopene = stack.peek();
+                    lastchar = stk.peek();
                 }
-                if (current.equals(')') && !lastopene.equals('(')) {
-                    return "false";
-                } else if (current.equals('}') && !lastopene.equals('{')) {
-                    return "false";
-                } else if (current.equals(']') && !lastopene.equals('[')) {
-                    return "false";
+                if (curr.equals(')') && !lastchar.equals('(')) {
+                    return false;
+                } else if (curr.equals(']') && !lastchar.equals('[')) {
+                    return false;
+                } else if (curr.equals('}') && !lastchar.equals('{')) {
+                    return false;
                 }
-                stack.pop();
+                stk.pop();
             }
-        }
 
-        return "stackt is empty = " + " true ";
+        }
+        return stk.isEmpty();
     }
+
+    /*************************************************************************** */
 
     public static void main(String[] args) {
         System.out.println("String...........");
         // valid parentheses
-        String s = "{}";
+
+        String s = "[]{}()";
         System.out.println(parentheses(s));
 
         // Stack<Character> c = new Stack<>();
