@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Stackk",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.Stackk",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stack",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.Stack",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch String_Questions",
             "request": "launch",
             "mainClass": "Questions.GreeksForGreeks.String_Questions",
