@@ -86,25 +86,51 @@ public class String_Questions {
 
     /*************************************************************************** */
     // Remove Consecutive Characters
-    public static String RConsecutiveChar(String s){
-        int n = s.length();
-        System.out.println("length of string " +n);
-        String res = "";
-        for(int i=0 ;i<n;i++){
-            if(i<n-1 && s.charAt(i) == s.charAt(i+1)){
-                continue;
-            }else{
-                res = res + s.charAt(i);
+    // public static String RConsecutiveChar(String s){
+    // int n = s.length();
+    // System.out.println("length of string " +n);
+    // String res = "";
+    // for(int i=0 ;i<n;i++){
+    // if(i<n-1 && s.charAt(i) == s.charAt(i+1)){
+    // continue;
+    // }else{
+    // res = res + s.charAt(i);
+    // }
+    // }
+    // return res;
+    // }
+    /*************************************************************************** */
+    // Longest Common Prefix Difficult to Understand.
+    public static String Prefix(String[] s) {
+        String Result = s[0];
+        // String[] s = {"flower","flow","flight"};
+        // System.out.println(Result);
+        if (s.length == 0) {
+            return "";
+        }
+        for (int i = 1; i < s.length; i++) {
+            // System.out.println(s[i].indexOf(Result) != 0);
+            while (s[i].indexOf(Result) != 0) {
+                Result = Result.substring(0, Result.length() - 1);
             }
         }
-        return res;
+        return Result;
     }
 
     public static void main(String[] args) {
         System.out.println("String...........");
+
+        // Longest Common Prefix
+        String[] s = { "flower", "flow", "flight" };
+        System.out.println(Prefix(s));
+        String s1 = "hello";
+        // System.out.println( "Ans of indexs " + s1.indexOf('o'));
+        // System.out.println(s.(3,2));
+
+        /*************************************************************************** */
         // Remove Consecutive Characters
-        String s = "aabbaa";
-        System.out.println(RConsecutiveChar(s));;
+        // String s = "aabbaacccccccccccccddddddeeeeeeeeee";
+        // System.out.println(RConsecutiveChar(s));;
         /*************************************************************************** */
         // valid parentheses
         // String s = "[]{}()";
