@@ -124,7 +124,7 @@ public static String MobileKeypad(String[] s , String input){
     String output = "";
     for(int i = 0 ;i<input.length();i++){
         if(input.charAt(i) == ' '){
-            output += " ";
+            output += "0";
         }else{
             output += s[input.charAt(i) - 'A'];
         }
@@ -146,7 +146,7 @@ public static String MobileKeypad(String[] s , String input){
                 "7", "77", "777", "7777",
                 "8", "88", "888",
                 "9", "99", "999", "9999" };
-        String input = "AB";
+        String input = "HEY U";
         System.out.println(MobileKeypad(s, input));
         /*************************************************************************** */
 
