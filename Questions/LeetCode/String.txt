@@ -1,0 +1,22 @@
+Easy Questions 
+1. valid Palindrome                (sol)
+2. valid Anagram                   (sol )
+3. valid parentheses               (sol)
+4. Remove Consecutive Characters   (sol)
+5. Longest Common Prefix           (sol)
+6. Convert a Sentence into its Equivalent Mobile Numeric Keypad Sequence    (sol)
+7. Print all the Duplicates in the Input String     (Unsol)
+
+   Medium Questions
+8. Longest Substring without Repeating Characters	 (Unsol)
+9. Strings	Longest Repeating Character Replacement	 (Unsol)
+10. Strings	Group Anagrams                           (Unsol)
+11. Strings	Longest Palindromic Substring	 (Unsol)
+12. Strings	Palindromic Substrings	 (Unsol)
+13. Strings	Next Permutation	 (Unsol)
+14. Strings	Count Palindromic Subsequences (Unsol)
+15. Strings	Smallest Window in a String Containing all the Characters of Another String     (Unsol)       (Unsol)
+16. Strings	Wildcard String Matching    (Unsol)
+17. Strings	Longest Prefix Suffix     (Unsol)
+18. Strings	Rabin-Karp Algorithm for Pattern Searching      (Unsol)
+19. Strings	Transform One String to Another using Minimum Number of Given Operation     (Unsol)                              (Unsol)

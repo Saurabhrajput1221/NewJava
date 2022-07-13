@@ -1,4 +1,4 @@
-package Questions.GreeksForGreeks;
+package Questions.LeetCode;
 
 // import java.lang.annotation.Target;
 // import java.util.ArrayList;

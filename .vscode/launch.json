@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringHardQuestions",
+            "request": "launch",
+            "mainClass": "Questions.LeetCode.StringHardQuestions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringHardQuestions",
+            "request": "launch",
+            "mainClass": "Questions.GreeksForGreeks.StringHardQuestions",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch Stackk",
             "request": "launch",
             "mainClass": "Questions.ApniKaksha.Stackk",

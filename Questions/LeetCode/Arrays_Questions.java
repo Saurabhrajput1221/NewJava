@@ -1,4 +1,4 @@
-package Questions.GreeksForGreeks;
+package Questions.LeetCode;
 
 // import java.util.Arrays;
 
