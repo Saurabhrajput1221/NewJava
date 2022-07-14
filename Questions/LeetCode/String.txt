@@ -8,7 +8,7 @@ Easy Questions
 7. Print all the Duplicates in the Input String     (Unsol)
 
    Medium Questions
-8. Longest Substring without Repeating Characters	 (Unsol)
+8. Longest Substring without Repeating Characters	 (sol)
 9. Strings	Longest Repeating Character Replacement	 (Unsol)
 10. Strings	Group Anagrams                           (Unsol)
 11. Strings	Longest Palindromic Substring	 (Unsol)
