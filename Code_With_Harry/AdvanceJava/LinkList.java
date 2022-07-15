@@ -55,4 +55,14 @@ public class LinkList {
         }
         System.out.println(s1);
     }
+
+    public void add(int i) {
+    }
+
+    public void printlist() {
+    }
+
+    public int size() {
+        return 0;
+    }
 }

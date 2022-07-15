@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LinkListt",
+            "request": "launch",
+            "mainClass": "Questions.LeetCode.LinkListt",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkList",
+            "request": "launch",
+            "mainClass": "Questions.LeetCode.LinkList",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkList",
+            "request": "launch",
+            "mainClass": "Questions.ApniKaksha.LinkList",
+            "projectName": "Java_cb0dbbcd"
+        },
+        {
+            "type": "java",
             "name": "Launch StringHardQuestions",
             "request": "launch",
             "mainClass": "Questions.LeetCode.StringHardQuestions",
