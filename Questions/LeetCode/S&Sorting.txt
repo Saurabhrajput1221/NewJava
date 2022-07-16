@@ -1,0 +1,13 @@
+			
+76
+Searching & Sorting	Permute Two Arrays such that Sum of Every Pair is Greater or Equal to K	Samsung	
+77
+Searching & Sorting	counting sort	Samsung+ Morgan Stanley+ Snapdeal + EPAM Systems	
+78
+Searching & Sorting	find common elements three sorted arrays	MAQ Software Microsoft VMWare	
+79
+Searching & Sorting	Searching in an array where adjacent differ by at most k	TCS Amazon	
+80
+Searching & Sorting	ceiling in a sorted array	TCS	
+81
+Searching & Sorting	Piar with given difference
