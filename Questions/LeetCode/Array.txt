@@ -6,7 +6,7 @@ Easy Questions
 5.	Chocolate Distribution Problem           (sol)
 
       Medium Questions
-7. Next Permutation                  (Sol but no understand) 
+7. Next Permutation                  (Sol but too much consfusing) 
 8. Best time to Buy and Sell Stock   (sol)
 9. Repeat and Missing Number Array   (sol but ratta)
 10. Kth-Largest Element in an Array  (sol) 

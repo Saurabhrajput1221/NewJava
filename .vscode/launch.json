@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch PsudoCode",
+      "request": "launch",
+      "mainClass": "Questions.LeetCode.PsudoCode",
+      "projectName": "Java_cb0dbbcd"
+    },
+    {
+      "type": "java",
+      "name": "Launch Arrays_Questions",
+      "request": "launch",
+      "mainClass": "Questions.LeetCode.Arrays_Questions",
+      "projectName": "Java_cb0dbbcd"
+    },
+    {
+      "type": "java",
       "name": "Launch SearchingAndSorting",
       "request": "launch",
       "mainClass": "Questions.LeetCode.SearchingAndSorting",
