@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch ArrayHardQuestions",
+      "request": "launch",
+      "mainClass": "Questions.LeetCode.ArrayHardQuestions",
+      "projectName": "Java_cb0dbbcd"
+    },
+    {
+      "type": "java",
       "name": "Launch PsudoCode",
       "request": "launch",
       "mainClass": "Questions.LeetCode.PsudoCode",
