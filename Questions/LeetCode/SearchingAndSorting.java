@@ -18,6 +18,10 @@ public class SearchingAndSorting {
     // }
     // return "YES";
     // }
+    public static String Ispossible(Integer []a, int b[], int k){
+        
+    }
+
     /**************************************************************************/
     // counting sort (Too much confusing)
     // public static void countSort(int[] arr) {

@@ -32,6 +32,7 @@ public class String_Questions {
     // System.out.println("string is a palindrome ");
     // return true;
     // }
+
     /*************************************************************************** */
     // valid Anagram
     // public static boolean isAnagram(String s, String t) {
@@ -120,30 +121,30 @@ public class String_Questions {
     // }
     /*************************************************************************** */
     // Convert a Sentence into its Equivalent Mobile Numeric Keypad Sequence
-// public static String MobileKeypad(String[] s , String input){
-//     String output = "";
-//     for(int i = 0 ;i<input.length();i++){
-//         if(input.charAt(i) == ' '){
-//             output += "0";
-//         }else{
-//             output += s[input.charAt(i) - 'A'];
-//         }
-//     }
-//     return output;
-// }
+    // public static String MobileKeypad(String[] s , String input){
+    // String output = "";
+    // for(int i = 0 ;i<input.length();i++){
+    // if(input.charAt(i) == ' '){
+    // output += "0";
+    // }else{
+    // output += s[input.charAt(i) - 'A'];
+    // }
+    // }
+    // return output;
+    // }
 
     public static void main(String[] args) {
         System.out.println("String...........");
-                /*************************************************************************** */
+        /*************************************************************************** */
         // Convert a Sentence into its Equivalent Mobile Numeric Keypad Sequence
         // String s[] = { "2", "22", "222",
-        //         "3", "33", "333",
-        //         "4", "44", "444",
-        //         "5", "55", "555",
-        //         "6", "66", "666",
-        //         "7", "77", "777", "7777",
-        //         "8", "88", "888",
-        //         "9", "99", "999", "9999" };
+        // "3", "33", "333",
+        // "4", "44", "444",
+        // "5", "55", "555",
+        // "6", "66", "666",
+        // "7", "77", "777", "7777",
+        // "8", "88", "888",
+        // "9", "99", "999", "9999" };
         // String input = "HEY U";
         // System.out.println(MobileKeypad(s, input));
         /*************************************************************************** */
@@ -181,8 +182,8 @@ public class String_Questions {
 
         /*************************************************************************** */
         // valid Palindrome
-        // String s = "A Man, a plan , a canal: panama";
-        // System.out.println(Ispalindrome(s));
+        String s = "A Man, a plan , a canal: panama";
+        System.out.println(Ispalindrome(s));
 
     }
 }

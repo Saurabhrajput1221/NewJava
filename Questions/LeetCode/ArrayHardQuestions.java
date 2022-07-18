@@ -1,10 +1,5 @@
 package Questions.LeetCode;
 
-import java.rmi.server.RemoteCall;
-import java.util.Arrays;
-
-import javax.lang.model.element.Element;
-
 // import java.lang.annotation.Target;
 // import java.util.ArrayList;
 // import java.util.Arrays;
@@ -67,28 +62,33 @@ public class ArrayHardQuestions {
 
     /*******************************************************************/
     // Product of Array Except Self( need to sol again)
-    // public static int productExceptSelf(int arr[]) {
-    // int curr = 1;
-    // int n = arr.length - 1;
-
-    // 1, 2, 3, 4
-
+    // public static int productExceptSelf(int[] nums) {
+    // int n = nums.length;
     // int ans[] = new int[n];
+    // int curr = 1;
     // for (int i = 0; i < n; i++) {
     // ans[i] = curr;
-    // curr *= arr[i];
+    // curr *= nums[i];
+    // System.out.println(" output of array " + ans[i]);
     // }
     // curr = 1;
     // for (int i = n - 1; i >= 0; i--) {
     // ans[i] *= curr;
-    // curr *= arr[i];
+    // System.out.println(" " + ans[i]);
+    // curr *= nums[i];
     // }
-    // // print array
+    // for (int i = 0; i < ans.length; i++) {
+    // System.out.println(ans[i] + " ");
+    // }
+    // return 1;
+
+    // }
+
+    // print array
     // for (int i = 0; i < ans.length; i++) {
     // System.out.println(ans);
     // }
-    // return curr;
-    // }
+
     /*******************************************************************/
 
     // public static int maxProduct(int arr[]) {
@@ -198,10 +198,10 @@ public class ArrayHardQuestions {
 
         /*******************************************************************/
         // Container With Most Water
-        // int arr[] = {1,8,6,2,5,4,8,3,7};
+        // int arr[] = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
         // int arr[] = { 6, 4, 2, 5, 4, 6, 1, 3, 5 };
-        // int arr[] = {6,4,5,4,6,7,6};
-        // int arr[] = {1,7};
+        // int arr[] = { 6, 4, 5, 4, 6, 7, 6 };
+        // int arr[] = { 1, 7 };
         // int arr[] = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
         // System.out.println(MaxWater(arr));
         /*******************************************************************/
@@ -214,7 +214,6 @@ public class ArrayHardQuestions {
         // int arr[] = { 4, 5, 6, 7, 8, 0, 1, 3 };
         // int arr[] = { 11, 13, 15, 17 };
         // System.out.println(findMin(arr));
-
         /*******************************************************************/
         // int arr[] = { 2, 3, -2, 4,3 };
         // int arr[] = {0,2};
@@ -222,8 +221,8 @@ public class ArrayHardQuestions {
         // System.out.println(maxProduct(arr));
         /*******************************************************************/
         // Product of Array Except Self
-        // int arr[] = { 1, 2, 3, 4 };
-        // productExceptSelf(arr);
+        // int nums[] = { 1, 2, 3, 4 };
+        // productExceptSelf(nums);
 
         /*******************************************************************/
         // // Trapping Rain Water
