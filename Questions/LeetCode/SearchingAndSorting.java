@@ -90,19 +90,51 @@ public class SearchingAndSorting {
     /**************************************************************************/
     // Searching in an array where adjacent differ by at most k
     // public static int search(int arr[], int k, int x) {
-    //     int i = 0;
-    //     while (i < arr.length) {
-    //         if (arr[i] == x) {
-    //             return i;
-    //         }
-    //         i = i + Math.max(1, Math.abs(arr[i] - x) / k);
-    //     }
-    //     return -1;
+    // int i = 0;
+    // while (i < arr.length) {
+    // if (arr[i] == x) {
+    // return i;
     // }
-    
+    // i = i + Math.max(1, Math.abs(arr[i] - x) / k);
+    // }
+    // return -1;
+    // }
+    /**************************************************************************/
+    // ceiling in a sorted array
+    // public static int CeilSearch(int arr[] , int x){
+    // int low =0;
+    // int high = arr.length-1;
+    // if(arr.length==0){
+    // return -1;
+    // }
+    // while(low<=high){
+    // int mid = low +(high -low)/2;
+    // if(x == arr[mid] ){
+    // return mid;
+    // }
+    // if(x <arr[mid]){
+    // high = mid -1;
+    // }else{
+    // low = mid +1;
+    // }
+    // }
+    // return low;
+    // }
 
     public static void main(String[] args) {
         System.out.println("Searching And Sorting...");
+        // ceiling in a sorted array
+        // int arr[] = { 1, 2, 8, 10, 10, 12, 19 };
+        // int arr[] = { 1, 2, 8, 10, 10, 12, 19 };
+        // int x = 3;
+        // int ceil = (CeilSearch(arr, x));
+        // if (ceil == -1) {
+        // System.out.println("ceiling of " + x + " doesn't exist in array ");
+
+        // } else {
+        // System.out.println("ceiling of " + x + " is " + arr[ceil]);
+        // }
+        /**************************************************************************/
         // Searching in an array where adjacent differ by at most k
         // int arr[] = {2,4,5,7,7,6};
         // int arr[] = { 20, 40, 50, 70, 70, 60 };
