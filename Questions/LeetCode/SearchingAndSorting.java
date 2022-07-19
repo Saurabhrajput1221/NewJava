@@ -1,9 +1,5 @@
 package Questions.LeetCode;
 
-import java.util.ArrayList;
-
-import AdvanceJava.Arraylist;
-
 // import java.util.Arrays;
 // import java.util.Collections;
 
@@ -70,12 +66,14 @@ public class SearchingAndSorting {
     // }
     /**************************************************************************/
     // find common elements three sorted arrays
-    // public static ArrayList<Integer> commanEle(int arr1[], int arr2[], int arr3[]) {
+    // public static ArrayList<Integer> commanEle(int arr1[], int arr2[], int
+    // arr3[]) {
     // int i = 0, j = 0, k = 0;
     // while (i < arr1.length && j < arr2.length && k < arr3.length) {
 
     // if (arr1[i] == arr2[j] && arr2[j] == arr3[k]) {
-    // System.out.println("arr1[i] is " + arr1[i] + " arr2[j] is "+ arr2[j] + "arr3[k] is " + arr3[k]);
+    // System.out.println("arr1[i] is " + arr1[i] + " arr2[j] is "+ arr2[j] +
+    // "arr3[k] is " + arr3[k]);
     // i++;
     // j++;
     // k++;
@@ -90,8 +88,30 @@ public class SearchingAndSorting {
     // return null;
     // }
     /**************************************************************************/
+    // Searching in an array where adjacent differ by at most k
+    // public static int search(int arr[], int k, int x) {
+    //     int i = 0;
+    //     while (i < arr.length) {
+    //         if (arr[i] == x) {
+    //             return i;
+    //         }
+    //         i = i + Math.max(1, Math.abs(arr[i] - x) / k);
+    //     }
+    //     return -1;
+    // }
+    
+
     public static void main(String[] args) {
         System.out.println("Searching And Sorting...");
+        // Searching in an array where adjacent differ by at most k
+        // int arr[] = {2,4,5,7,7,6};
+        // int arr[] = { 20, 40, 50, 70, 70, 60 };
+        // int x = 60;
+        // int k = 20;
+        // System.out.println(search(arr, k, x));
+        // int s = Math.abs(arr[0] - 60)/20;
+        // System.out.println(s);
+
         /**************************************************************************/
         // find common elements three sorted arrays
         // int arr1[] = { 1, 5, 10, 20, 40, 80 };
