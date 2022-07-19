@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch SANDSortingHardQuestions",
+      "request": "launch",
+      "mainClass": "Questions.LeetCode.SANDSortingHardQuestions",
+      "projectName": "Java_cb0dbbcd"
+    },
+    {
+      "type": "java",
       "name": "Launch String_Questions",
       "request": "launch",
       "mainClass": "Questions.LeetCode.String_Questions",

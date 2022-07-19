@@ -1,7 +1,19 @@
-			
-Permute Two Arrays such that Sum of Every Pair is Greater or Equal to K	(sol)
-counting sort		(sol but to much confusing )
-find common elements three sorted arrays  (sol)		
-Searching in an array where adjacent differ by at most k	 (sol)	
-ceiling in a sorted array	 (sol )
-Piar with given difference    (sol)
+   Easy Questions	
+1.  Permute Two Arrays such that Sum of Every Pair is Greater or Equal to K	(sol)
+2.  counting sort		(sol but to much confusing )
+3.  find common elements three sorted arrays  (sol)		
+4.  Searching in an array where adjacent differ by at most k	 (sol)	
+5.  ceiling in a sorted array	 (sol )
+6.  Piar with given difference    (sol)
+
+Hard Questions
+1.	majority element	(Unsol)
+1.  count triplets with sum smaller that a given value  (Unsol)
+1.	Maximum Sum Subsequence with no adjacent elements	(Unsol)
+1.	Merge Sorted Arrays using O(1) Space	(Unsol)
+1.	Inversion of Array    (Unsol)
+1.	Find Duplicates in O(n) Time and O(1) Extra Space	(Unsol)	
+1.	Radix Sort	(Unsol)
+1.	Product of Array except itself	(Unsol)
+1.	Make all Array Elements Equal   (Unsol)
+1.	Check if Reversing a Sub Array Make the Array Sorted   (Unsol)
