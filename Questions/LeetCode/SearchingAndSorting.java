@@ -121,9 +121,33 @@ public class SearchingAndSorting {
     // return low;
     // }
     /**************************************************************************/
+    // Piar with given difference
+    public static boolean Pair(int arr[], int n) {
+        int i = 0;
+        int j = 1;
+        
+        while (i < arr.length && j < arr.length) {
+
+            if ((arr[i] - arr[j] == n || arr[j] - arr[i] == n) && i != j) {
+                System.out.println("pair found " + arr[i] + " " + arr[j]);
+                return true;
+            } else if (arr[i] - arr[j] > n) {
+                j++;
+            } else {
+                i++;
+            }
+        }
+        System.out.println("pair is not found ");
+        return false;
+    }
 
     public static void main(String[] args) {
         System.out.println("Searching And Sorting...");
+        // Piar with given difference
+        int arr[] = { 1, 8, 30, 40, 100 };
+        int n = -60;
+        System.out.print(Pair(arr, n));
+
         /**************************************************************************/
         // ceiling in a sorted array
         // int arr[] = { 1, 2, 8, 10, 10, 12, 19 };
