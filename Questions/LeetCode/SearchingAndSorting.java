@@ -120,9 +120,11 @@ public class SearchingAndSorting {
     // }
     // return low;
     // }
+    /**************************************************************************/
 
     public static void main(String[] args) {
         System.out.println("Searching And Sorting...");
+        /**************************************************************************/
         // ceiling in a sorted array
         // int arr[] = { 1, 2, 8, 10, 10, 12, 19 };
         // int arr[] = { 1, 2, 8, 10, 10, 12, 19 };
