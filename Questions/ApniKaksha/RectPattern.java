@@ -1,12 +1,12 @@
 package Questions.ApniKaksha;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
+// import java.util.regex.Pattern;
 
 public class RectPattern {
   public static void main(String[] args) {
     System.out.println("Rectangular pattern");
-    Scanner sc = new Scanner(System.in);
+    // Scanner sc = new Scanner(System.in);
     // int n = sc.nextInt();
     // int k = sc.nextInt();
     // // Rectangular pattern
@@ -32,7 +32,7 @@ public class RectPattern {
 
     /****************************************************************** */
     // Inverted half pyramid
-    int n = 5;
+    // int n = 5;
     // for (int i = n; i > 0; i--) {
     // for (int j = 0; j < i; j++) {
     // System.out.print(" * ");

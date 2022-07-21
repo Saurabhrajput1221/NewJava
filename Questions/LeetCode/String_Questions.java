@@ -183,7 +183,7 @@ public class String_Questions {
         /*************************************************************************** */
         // valid Palindrome
         String s = "A Man, a plan , a canal: panama";
-        System.out.println(Ispalindrome(s));
+        // System.out.println(Ispalindrome(s));
 
     }
 }

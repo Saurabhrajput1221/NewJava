@@ -1,8 +1,8 @@
 package Questions.ApniKaksha;
 
-import java.util.jar.Attributes.Name;
+// import java.util.jar.Attributes.Name;
 
-import javax.print.attribute.standard.MediaSize.NA;
+// import javax.print.attribute.standard.MediaSize.NA;
 
 public class Functions {
    public static void Name(String name){
