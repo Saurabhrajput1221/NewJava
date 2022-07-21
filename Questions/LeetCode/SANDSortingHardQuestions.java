@@ -100,44 +100,47 @@ public class SANDSortingHardQuestions {
     // }
     // return ans;
     // }
-    /***********************************************************************/
-    // Product of Array except itself
-    public static void ProductArrExS(int arr[]) {
-        if (arr.length == 1) {
-            System.out.println(0);
-            return;
-        }
-        int left[] = new int[arr.length];
-        int right[] = new int[arr.length];
-        int prod[] = new int[arr.length];
+    // /***********************************************************************/
+    // // Product of Array except itself
+    // public static long[] ProductArrExS(int arr[]) {
+    // if (arr.length == 1) {
+    // System.out.println(0);
+    // // return;
+    // }
+    // int left[] = new int[arr.length];
+    // int right[] = new int[arr.length];
+    // int prod[] = new int[arr.length];
 
-        // int i ;
-        // int j;
-        left[0] = 1;
-        right[arr.length - 1] = 1;
+    // // int i ;
+    // // int j;
+    // left[0] = 1;
+    // right[arr.length - 1] = 1;
 
-        for (int i = 1; i < arr.length; i++) {
-            left[i] = arr[i - 1] * left[i - 1];
-            System.out.println(" left " + left[i]);
-        }
-        for (int j = arr.length - 2; j >= 0; j--) {
-            right[j] = arr[j + 1] * right[j + 1];
-            System.out.println(" right " + right[j]);
-        }
-        for (int i = 0; i < arr.length; i++) {
-            prod[i] = left[i] * right[i];
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println( prod[i]);
-        }
-        return;
-    }
+    // for (int i = 1; i < arr.length; i++) {
+    // left[i] = arr[i - 1] * left[i - 1];
+    // // System.out.println(" left " + left[i]);
+    // }
+    // for (int j = arr.length - 2; j >= 0; j--) {
+    // right[j] = arr[j + 1] * right[j + 1];
+    // // System.out.println(" right " + right[j]);
+    // }
+    // for (int i = 0; i < arr.length; i++) {
+    // prod[i] = left[i] * right[i];
+    // }
+    // // for (int i = 0; i < arr.length; i++) {
+    // // System.out.println( prod[i]);
+    // // }
+    // // return;
+    // return null;
+    // }
 
     public static void main(String[] args) {
         System.out.println("Searching and Sorting Hard Question...");
-        // Product of Array except itself
-        int arr[] = { 10, 3, 5, 6, 2 };
-        ProductArrExS(arr);
+        /***********************************************************************/
+        // // Product of Array except itself
+        // int arr[] = {10 ,3, 5 ,6, 2};
+        // // int arr[] = {7, 8, 6, 4 ,6 ,7, 3 ,10, 2, 3, 8, 1, 10, 4, 7, 1, 7, 3, 7, 2, 9, 8, 10, 3, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1};
+        // ProductArrExS(arr);
         /***********************************************************************/
         // int arr[] = {2,4,1,3,5};
         // System.out.println(inversionCount(arr));

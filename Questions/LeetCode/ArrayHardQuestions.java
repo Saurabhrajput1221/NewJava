@@ -61,35 +61,35 @@ public class ArrayHardQuestions {
     // }
 
     /*******************************************************************/
-    // Product of Array Except Self( need to sol again)
+    // // Product of Array Except Self( need to sol again)
 
-    public static void productExceptSelf(int arr[]) {
-        if (arr.length == 0) {
-            System.out.println(0);
-            return;
-        }
-        int left[] = new int[arr.length];
-        int right[] = new int[arr.length];
-        int prod[] = new int[arr.length];
+    // public static void productExceptSelf(int arr[]) {
+    // if (arr.length == 0) {
+    // System.out.println(0);
+    // return;
+    // }
+    // int left[] = new int[arr.length];
+    // int right[] = new int[arr.length];
+    // int prod[] = new int[arr.length];
 
-        left[0] = 1;
-        right[arr.length - 1] = 1;
+    // left[0] = 1;
+    // right[arr.length - 1] = 1;
 
-        for (int i = 1; i < arr.length; i++) {
-            left[i] = arr[i - 1] * left[i - 1];
+    // for (int i = 1; i < arr.length; i++) {
+    // left[i] = arr[i - 1] * left[i - 1];
 
-        }
-        for (int j = arr.length - 2; j >= 0; j--) {
-            right[j] = arr[j + 1] * right[j + 1];
-        }
-        for (int i = 0; i < arr.length; i++) {
-            prod[i] = left[i] * right[i];
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(" " + prod[i]);
-        }
-        return;
-    }
+    // }
+    // for (int j = arr.length - 2; j >= 0; j--) {
+    // right[j] = arr[j + 1] * right[j + 1];
+    // }
+    // for (int i = 0; i < arr.length; i++) {
+    // prod[i] = left[i] * right[i];
+    // }
+    // for (int i = 0; i < arr.length; i++) {
+    // System.out.println(" " + prod[i]);
+    // }
+    // return;
+    // }
     /*******************************************************************/
 
     // public static int maxProduct(int arr[]) {
@@ -222,8 +222,8 @@ public class ArrayHardQuestions {
         // System.out.println(maxProduct(arr));
         /*******************************************************************/
         // Product of Array Except Self
-        int arr[] = { 1, 2, 3, 4 };
-        productExceptSelf(arr);
+        // int arr[] = { 1, 2, 3, 4 };
+        // productExceptSelf(arr);
 
         /*******************************************************************/
         // // Trapping Rain Water
