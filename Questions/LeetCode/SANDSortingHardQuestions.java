@@ -1,9 +1,10 @@
 package Questions.LeetCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class SANDSortingHardQuestions {
-	// majority element
+    // majority element
     // public static void findMajority(int arr[]){
     // HashMap<Integer,Integer> map = new HashMap<>();
     // for(int i =0;i<arr.length;i++){
@@ -22,9 +23,31 @@ public class SANDSortingHardQuestions {
     // }
     // System.out.println("No Majority element avilable");
     // }
-/***********************************************************************/
+    /***********************************************************************/
+    // count triplets with sum smaller that a given value
+    public static int countTriplets(int arr[], int sum) {
+        int ans = 0;
+        for (int i = 0; i < arr.length; i++) {
+            int j = i + 1;
+            int k = arr.length - 1;
+            while (j < k) {
+                if (arr[i] + arr[j] + arr[k] >= sum) {
+                    k--;
+                } else {
+                    ans = ans + (k - j);
+                    j++;
+                }
+            }
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
         System.out.println("Searching and Sorting Hard Question...");
+        // count triplets with sum smaller that a given value
+        int arr[] = { 5, 1, 3, 4, 7 };
+        int sum = 12;
+        System.out.println(countTriplets(arr, sum));
         /***********************************************************************/
         // majority element
         // int arr[] = { 3, 3, 4, 2, 4, 4, 2, 4, 4 };
