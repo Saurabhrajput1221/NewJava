@@ -58,39 +58,61 @@ public class SANDSortingHardQuestions {
     // }
     /***********************************************************************/
     // Merge Sorted Arrays using O(1) Space
-    public static int arr1[] = new int[] {1,5,9,10,15,20};
-    public static int arr2[] = new int[] {2,3,8,13};
-    
-    public static void mergesort(int arr1[], int arr2[]) {
-        int m = arr1.length;
-        // int n = arr2.length;
-        int i = 0;
-        int j = 0;
-        int k = m - 1;
-        while (i <= arr1.length - 1 && j < arr2.length - 1) {
-            if (arr1[i] < arr2[j]) {
-                i++;
-            } else {
-                int temp = arr2[j];
-                arr2[j] = arr1[k];
-                arr1[k] = temp;
-                j++;
-                k--;
-            }
-        }
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-    }
+    // public static int arr1[] = new int[] {1,5,9,10,15,20};
+    // public static int arr2[] = new int[] {2,3,8,13};
+
+    // public static void mergesort(int arr1[], int arr2[]) {
+    // int m = arr1.length;
+    // // int n = arr2.length;
+    // int i = 0;
+    // int j = 0;
+    // int k = m - 1;
+    // while (i <= arr1.length - 1 && j < arr2.length - 1) {
+    // if (arr1[i] < arr2[j]) {
+    // i++;
+    // } else {
+    // int temp = arr2[j];
+    // arr2[j] = arr1[k];
+    // arr1[k] = temp;
+    // j++;
+    // k--;
+    // }
+    // }
+    // Arrays.sort(arr1);
+    // Arrays.sort(arr2);
+    // }
+    /***********************************************************************/
+// public static int inversionCount(int arr[] ){
+//     int l =0;
+//     int r = l+1;
+//     int ans =0;
+//     while(l<=r){
+//         // if(arr[l]<=arr[r] && l<=arr.length){
+//         //     return 0;
+//         // }
+//         if(arr[l]>arr[r] && l<r && l<=arr.length){
+//             l++;
+//             ans++;
+//         }else{
+//             l++;
+//             r++;
+//         }
+//     }
+//     return ans;
+// }
 
     public static void main(String[] args) {
         System.out.println("Searching and Sorting Hard Question...");
+
+        int arr[] = {2,4,1,3,5};
+        System.out.println(inversionCount(arr));
+        /***********************************************************************/
         // Merge Sorted Arrays using O(1) Space
-        mergesort(arr1, arr2);
-        System.out.println(Arrays.toString(arr1));
-        System.out.println(Arrays.toString(arr2));
+        // mergesort(arr1, arr2);
+        // System.out.println(Arrays.toString(arr1));
+        // System.out.println(Arrays.toString(arr2));
         // int arr1[] = { 1, 5, 9, 10, 15, 20 };
         // int arr2[] = { 2, 3, 8, 13 };
-        
 
         /***********************************************************************/
         // Maximum Sum Subsequence with no adjacent elements
