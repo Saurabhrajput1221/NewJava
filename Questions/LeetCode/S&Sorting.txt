@@ -8,8 +8,8 @@
 
 Hard Questions
 1.	majority element	(sol but littele bit confusing)
-1.  count triplets with sum smaller that a given value  (Unsol)
-1.	Maximum Sum Subsequence with no adjacent elements	(Unsol)
+1.  count triplets with sum smaller that a given value  (sol)
+1.	Maximum Sum Subsequence with no adjacent elements	(sol)
 1.	Merge Sorted Arrays using O(1) Space	(Unsol)
 1.	Inversion of Array    (Unsol)
 1.	Find Duplicates in O(n) Time and O(1) Extra Space	(Unsol)	
