@@ -1,7 +1,7 @@
 package Questions.LeetCode;
 
-import java.util.Arrays;
-import java.util.HashMap;
+// import java.util.Arrays;
+// import java.util.HashMap;
 
 public class SANDSortingHardQuestions {
     // majority element
@@ -82,30 +82,65 @@ public class SANDSortingHardQuestions {
     // Arrays.sort(arr2);
     // }
     /***********************************************************************/
-// public static int inversionCount(int arr[] ){
-//     int l =0;
-//     int r = l+1;
-//     int ans =0;
-//     while(l<=r){
-//         // if(arr[l]<=arr[r] && l<=arr.length){
-//         //     return 0;
-//         // }
-//         if(arr[l]>arr[r] && l<r && l<=arr.length){
-//             l++;
-//             ans++;
-//         }else{
-//             l++;
-//             r++;
-//         }
-//     }
-//     return ans;
-// }
+    // public static int inversionCount(int arr[] ){
+    // int l =0;
+    // int r = l+1;
+    // int ans =0;
+    // while(l<=r){
+    // // if(arr[l]<=arr[r] && l<=arr.length){
+    // // return 0;
+    // // }
+    // if(arr[l]>arr[r] && l<r && l<=arr.length){
+    // l++;
+    // ans++;
+    // }else{
+    // l++;
+    // r++;
+    // }
+    // }
+    // return ans;
+    // }
+    /***********************************************************************/
+    // Product of Array except itself
+    public static void ProductArrExS(int arr[]) {
+        if (arr.length == 1) {
+            System.out.println(0);
+            return;
+        }
+        int left[] = new int[arr.length];
+        int right[] = new int[arr.length];
+        int prod[] = new int[arr.length];
+
+        // int i ;
+        // int j;
+        left[0] = 1;
+        right[arr.length - 1] = 1;
+
+        for (int i = 1; i < arr.length; i++) {
+            left[i] = arr[i - 1] * left[i - 1];
+            System.out.println(" left " + left[i]);
+        }
+        for (int j = arr.length - 2; j >= 0; j--) {
+            right[j] = arr[j + 1] * right[j + 1];
+            System.out.println(" right " + right[j]);
+        }
+        for (int i = 0; i < arr.length; i++) {
+            prod[i] = left[i] * right[i];
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println( prod[i]);
+        }
+        return;
+    }
 
     public static void main(String[] args) {
         System.out.println("Searching and Sorting Hard Question...");
-
-        int arr[] = {2,4,1,3,5};
-        System.out.println(inversionCount(arr));
+        // Product of Array except itself
+        int arr[] = { 10, 3, 5, 6, 2 };
+        ProductArrExS(arr);
+        /***********************************************************************/
+        // int arr[] = {2,4,1,3,5};
+        // System.out.println(inversionCount(arr));
         /***********************************************************************/
         // Merge Sorted Arrays using O(1) Space
         // mergesort(arr1, arr2);
