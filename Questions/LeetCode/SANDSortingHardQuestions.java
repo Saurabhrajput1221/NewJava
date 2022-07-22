@@ -133,13 +133,36 @@ public class SANDSortingHardQuestions {
     // // return;
     // return null;
     // }
+    /***********************************************************************/
+    // Make all Array Elements Equal
+    public static int MakeEqualAllElm(int arr[]){
+        int n = arr.length;
+        int y;
+        if(n%2==1){
+            y = arr[n/2];
+        }else{
+            y = (arr[n/2] + arr[(n-2)/2])/2;
+        }
+        int s=0;
+        for(int i =0;i<n;i++){
+            s+= Math.abs(arr[i] -y);
+        }
+        return s;
+    }
+
 
     public static void main(String[] args) {
         System.out.println("Searching and Sorting Hard Question...");
-        /***********************************************************************/
+        // Make all Array Elements Equal
+        int arr[] = { 1, 100, 101 };
+        System.out.println(MakeEqualAllElm(arr));
+        // System.out.println(arr[(3-2)/2 ]);
+        // System.out.println(arr.length% 2 == 1);
+                /***********************************************************************/
         // // Product of Array except itself
         // int arr[] = {10 ,3, 5 ,6, 2};
-        // // int arr[] = {7, 8, 6, 4 ,6 ,7, 3 ,10, 2, 3, 8, 1, 10, 4, 7, 1, 7, 3, 7, 2, 9, 8, 10, 3, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1};
+        // // int arr[] = {7, 8, 6, 4 ,6 ,7, 3 ,10, 2, 3, 8, 1, 10, 4, 7, 1, 7, 3, 7, 2,
+        // 9, 8, 10, 3, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1};
         // ProductArrExS(arr);
         /***********************************************************************/
         // int arr[] = {2,4,1,3,5};

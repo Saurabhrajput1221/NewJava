@@ -15,5 +15,5 @@ Hard Questions
 12.	Find Duplicates in O(n) Time and O(1) Extra Space	(Unsol)	
 13.	Radix Sort	(Unsol)
 14.	Product of Array except itself	(sol)
-15.	Make all Array Elements Equal   (Unsol)
+15.	Make all Array Elements Equal   (sol)
 16.	Check if Reversing a Sub Array Make the Array Sorted   (Unsol)
