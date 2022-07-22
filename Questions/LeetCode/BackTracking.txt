@@ -1,0 +1,9 @@
+	hard Questions 
+1.  Backtracking Set 2 Rat in a Maze	(Unsol)	
+1.	Combinational Sum		(Unsol)
+1.	Crossword-Puzzle		(Unsol)
+1.	Longest Possible Route in a Matrix with Hurdles		(Unsol)
+1.	Printing all solutions in N-Queen Problem	        (Unsol)
+1.	Solve the Sudoku         (Unsol)
+1.  Partition Equal Subset Sum     (Unsol)
+1.  M Coloring Problem     (Unsol)
