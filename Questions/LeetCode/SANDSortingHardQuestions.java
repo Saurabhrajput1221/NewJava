@@ -1,5 +1,7 @@
 package Questions.LeetCode;
 
+import java.util.Arrays;
+
 // import java.util.Arrays;
 // import java.util.HashMap;
 
@@ -134,31 +136,69 @@ public class SANDSortingHardQuestions {
     // return null;
     // }
     /***********************************************************************/
-    // Make all Array Elements Equal
-    public static int MakeEqualAllElm(int arr[]){
-        int n = arr.length;
-        int y;
-        if(n%2==1){
-            y = arr[n/2];
-        }else{
-            y = (arr[n/2] + arr[(n-2)/2])/2;
-        }
-        int s=0;
-        for(int i =0;i<n;i++){
-            s+= Math.abs(arr[i] -y);
-        }
-        return s;
-    }
+    // // Make all Array Elements Equal
+    // public static int MakeEqualAllElm(int arr[]){
+    // int n = arr.length;
+    // int y;
+    // if(n%2==1){
+    // y = arr[n/2];
+    // }else{
+    // y = (arr[n/2] + arr[(n-2)/2])/2;
+    // }
+    // int s=0;
+    // for(int i =0;i<n;i++){
+    // s+= Math.abs(arr[i] -y);
+    // }
+    // return s;
+    // }
+    /***********************************************************************/
+    // Check if Reversing a Sub Array Make the Array Sorted
 
+    public static boolean CheckReverse(int arr[]) {
+        int temp[] = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[i] = arr[i];
+            // System.out.print(temp[i] + " ");
+        }
+        Arrays.sort(temp);
+        int front;
+        for (front = 0; front < arr.length; front++) {
+            if (temp[front] != arr[front]) {
+                break;
+            }
+            // System.out.print(" "+ temp[front]);
+        }
+        int back;
+        for (back = arr.length - 1; back >= 0; back--) {
+            if (temp[back] != arr[back]) {
+                break;
+            }
+        }
+        if (front >= back) {
+            return true;
+        }
+        do {
+            front++;
+            if (arr[front - 1] < arr[front]) {
+                return false;
+            }
+        } while (front != back);
+        return true;
+    }
 
     public static void main(String[] args) {
         System.out.println("Searching and Sorting Hard Question...");
+        // Check if Reversing a Sub Array Make the Array Sorted
+        int arr[] = { 1, 3, 4, 10, 9, 8 };
+        System.out.println(CheckReverse(arr));
+
+        /***********************************************************************/
         // Make all Array Elements Equal
-        int arr[] = { 1, 100, 101 };
-        System.out.println(MakeEqualAllElm(arr));
+        // int arr[] = { 1, 100, 101 };
+        // System.out.println(MakeEqualAllElm(arr));
         // System.out.println(arr[(3-2)/2 ]);
         // System.out.println(arr.length% 2 == 1);
-                /***********************************************************************/
+        /***********************************************************************/
         // // Product of Array except itself
         // int arr[] = {10 ,3, 5 ,6, 2};
         // // int arr[] = {7, 8, 6, 4 ,6 ,7, 3 ,10, 2, 3, 8, 1, 10, 4, 7, 1, 7, 3, 7, 2,

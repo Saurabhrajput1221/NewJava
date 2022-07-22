@@ -16,4 +16,4 @@ Hard Questions
 13.	Radix Sort	(Unsol)
 14.	Product of Array except itself	(sol)
 15.	Make all Array Elements Equal   (sol)
-16.	Check if Reversing a Sub Array Make the Array Sorted   (Unsol)
+16.	Check if Reversing a Sub Array Make the Array Sorted   (sol but only half to much complicated (time complexity is n^3))
