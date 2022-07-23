@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch LinkList2",
+      "request": "launch",
+      "mainClass": "Questions.DSA.LinkList2",
+      "projectName": "Java_cb0dbbcd"
+    },
+    {
+      "type": "java",
+      "name": "Launch Linked_listQuestion",
+      "request": "launch",
+      "mainClass": "Questions.LeetCode.Linked_listQuestion",
+      "projectName": "Java_cb0dbbcd"
+    },
+    {
+      "type": "java",
       "name": "Launch BackTrackingHardQuestions",
       "request": "launch",
       "mainClass": "Questions.LeetCode.BackTrackingHardQuestions",

@@ -1,0 +1,22 @@
+	Easy Questions
+1.  Reverse Linked List	(Unsol)	
+1.  Linked List Cycle	(Unsol)	
+1.  Merge Two Sorted Lists	(Unsol)	
+1.  Delete without Head node	(Unsol)	
+1.  Remove duplicates from an unsorted linked list	(Unsol)	 	
+1.  Sort a linked list of 0s-1s-or-2s  	(Unsol)	
+1.  Multiply two numbers represented  (Unsol)	
+
+    Hard Questions
+1.  Remove nth node from end of list	(Unsol)	
+1.  Reorder List	(Unsol)	
+1.  Detect and remove loop in a linked list	(Unsol)	
+1.  Write a Function to get the Intersection Point of two Linked Lists		(Unsol)	
+1.  Flatten a linked list with next and child pointers		(Unsol)	
+1.  Linked list in zig-zag fashion		(Unsol)	
+1.  Reverse a doubly linked list		(Unsol)	
+1.  Delete nodes which have a greater value on right side		(Unsol)	
+1.  Segregate even and odd Elements in a Linked List		(Unsol)	
+1.  Point to next higher value node in a linked list with an Arbitrary Pointer	GeekyAnts	(Unsol)	
+1.  Rearrange a given linked list in place (Unsol)	
+1.  Sort Biotonic Doubly Linked Lists    (Unsol)	

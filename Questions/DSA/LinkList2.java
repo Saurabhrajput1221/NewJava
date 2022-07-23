@@ -37,9 +37,7 @@ public class LinkList2 {
         // we need to strore the head of linkedList and Created head of linkedlist
         Node head = new Node(1);
         Node newNode = new Node(2);
-
-        // head.next = newNode;
-        head = InsertHead(head, newNode);
+        // head = InsertHead(head, newNode);
         head = InsertHead(head, new Node(55));
         head = InsertHead(head, new Node(5445));
 
