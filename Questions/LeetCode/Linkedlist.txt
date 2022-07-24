@@ -1,6 +1,6 @@
-	Easy Questions
-1.  Reverse Linked List	(Unsol)	
-1.  Linked List Cycle	(Unsol)	
+	Easy Questions (All Questions are solved on leetcode)
+1.  Reverse Linked List	(sol)	
+1.  Linked List Cycle	(sol)	
 1.  Merge Two Sorted Lists	(Unsol)	
 1.  Delete without Head node	(Unsol)	
 1.  Remove duplicates from an unsorted linked list	(Unsol)	 	

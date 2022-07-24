@@ -17,26 +17,27 @@ public class Linked_listQuestion {
 
     /***********************************************************************/
     // Reverse Linked List
-    // public static Node reverselist(Node node) {
-    // if (node == null || node.next == null) {
-    // System.out.println("Node is empty");
-    // return node;
-    // }
-    // Node prev = null;
-    // Node curr = node;
-    // Node next = node.next;
-    // while (curr != null) {
-    // curr.next = prev;
-    // prev = curr;
-    // curr = next;
-    // if (next != null) {
-    // next = next.next;
-    // }
-    // }
-    // return prev;
-    // }
+    public static Node reverselist(Node node) {
+        if (node == null || node.next == null) {
+            System.out.println("Node is empty");
+            return node;
+        }
+        Node prev = null;
+        Node curr = node;
+        Node next = node.next;
+        while (curr != null) {
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+            if (next != null) {
+                next = next.next;
+            }
+        }
+        return prev;
+    }
+
     /***********************************************************************/
-    public Node  hasCycle(Node head) {
+    public Node hasCycle(Node head) {
         Node fp = head;
         Node sp = head;
         while (fp != null && fp.next != null) {
