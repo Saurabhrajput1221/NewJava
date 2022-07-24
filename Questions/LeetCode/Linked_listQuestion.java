@@ -17,25 +17,40 @@ public class Linked_listQuestion {
 
     /***********************************************************************/
     // Reverse Linked List
-    public static Node reverselist(Node node) {
-        if (node == null || node.next == null) {
-            System.out.println("Node is empty");
-            return node;
-        }
-        Node prev = null;
-        Node curr = node;
-        Node next = node.next;
-        while (curr != null) {
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-            if (next != null) {
-                next = next.next;
-            }
-        }
-        return prev;
-    }
-
+    // public static Node reverselist(Node node) {
+    // if (node == null || node.next == null) {
+    // System.out.println("Node is empty");
+    // return node;
+    // }
+    // Node prev = null;
+    // Node curr = node;
+    // Node next = node.next;
+    // while (curr != null) {
+    // curr.next = prev;
+    // prev = curr;
+    // curr = next;
+    // if (next != null) {
+    // next = next.next;
+    // }
+    // }
+    // return prev;
+    // }
+    /***********************************************************************/
+    // Merge Two Sorted Lists
+    // public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    // if(list1 == null ){
+    // return list2;
+    // }
+    // if(list2 == null){
+    // return list1;
+    // }
+    // if(list1.val<list2.val){
+    // list1.next = mergeTwoLists(list1.next, list2);
+    // return list1;
+    // }else{
+    // list2.next = mergeTwoLists(list1, list2.next);
+    // return list2;
+    // }
     /***********************************************************************/
     public Node hasCycle(Node head) {
         Node fp = head;
